@@ -1,0 +1,8 @@
+{
+  "masterVersionFile": "https://raw.githubusercontent.com/andrzejsokolowski/starsector-survival-mode-lite/main/survival_mode_lite.version",
+  "modName": "Survival Mode - Lite",
+  "modVersion": { "major": 1, "minor": 0, "patch": 0 },
+  "directDownloadURL": "https://github.com/andrzejsokolowski/starsector-survival-mode-lite/releases/latest/download/SurvivalModeLite.zip",
+  "changelogURL": "https://raw.githubusercontent.com/andrzejsokolowski/starsector-survival-mode-lite/main/changelog.txt",
+  "starsectorVersion": "0.98.5a-RC4"
+}

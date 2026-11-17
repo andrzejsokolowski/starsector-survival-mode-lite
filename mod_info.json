@@ -1,0 +1,10 @@
+{
+  "id": "survival_mode_lite",
+  "name": "Survival Mode - Lite",
+  "author": "Oddisz",
+  "utility": "true",
+  "version": "1.0.0",
+  "description": "Survival mode with half the penalties. Every survival number (prices, loot, fuel, salaries, colony costs and more) sits halfway between normal and survival. Only campaigns started in Survival mode change.",
+  "gameVersion": "0.98.5a-RC4",
+  "updateCheckURL": "https://raw.githubusercontent.com/andrzejsokolowski/starsector-survival-mode-lite/main/survival_mode_lite.version"
+}

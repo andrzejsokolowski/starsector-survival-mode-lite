@@ -1,0 +1,138 @@
+{
+	# Survival Mode - Lite
+	# Only matters in a campaign started in Survival mode. Normal saves are not touched.
+	# Every penalty is halfway between normal mode and survival mode.
+	# The comment after each value is: survival value / normal value.
+	# Lists start with "core_clearArray" so they replace the survival list instead of adding to it.
+
+	# Retirement and spacer share
+	"ext_spacerSharePerMonth":0.05,					# 0.1 / none
+	"ext_retirementMinCycles":40,					# 25 / never
+	"ext_retirementMaxCycles":50,					# 30 / never
+	"ext_retirementDelayCostBase":10000,			# 20000
+	"ext_retirementDelayCostPerMonth":500,			# 1000
+	"ext_retirementDelayCostMax":25000,				# 50000
+
+	# Ship, weapon, fighter and hull mod prices
+	"ext_shipBuyPriceMult":["core_clearArray", 3, 3, 3.5, 4.5],	# [5, 5, 6, 8] / 1 (frigate, destroyer, cruiser, capital)
+	"ext_weaponPriceMult":5.5,						# 10 / 1
+	"ext_fighterPriceMult":3,						# 5 / 1
+	"ext_hullmodPriceMult":4,						# 7 / 1
+	"ext_blueprintSellPriceMult":0.65,				# 0.3 / 1
+
+	# Domain-grade parts
+	"ext_partsPriceMult":1.5,						# 2 / 1
+	"ext_partsSpecialSalvageDropFraction":0.75,		# 0.5 / 1
+	"ext_partsPerUnitOfSupplies":0.0375,			# 0.025 / 0.05
+
+	# Ships for sale and ship recovery
+	"ext_shipForSaleFraction":0.625,				# 0.25 / 1
+	"ext_shipRecoverableFraction":0.6,				# 0.2 / 1
+	"ext_derelictShipRecoverableFraction":0.55,		# 0.1 / 1
+	"ext_shipRecoveryWithStoryPointsFraction":0.6,	# 0.2 / 1
+	"ext_shipForSaleQualityMod":-0.175,				# -0.35 / 0
+
+	# Weapons, fighters and hull mods for sale and as loot
+	"ext_weaponForSaleFraction":0.6,				# 0.2 / 1
+	"ext_weaponDropFraction":0.55,					# 0.1 / 1
+	"ext_weaponSalvageDropFraction":0.6,			# 0.2 / 1
+	"ext_fighterForSaleFraction":0.6,				# 0.2 / 1
+	"ext_fighterDropFraction":0.6,					# 0.2 / 1
+	"ext_fighterSalvageDropFraction":0.65,			# 0.3 / 1
+	"ext_hullmodForSaleFraction":0.675,				# 0.35 / 1
+	"ext_hullmodDropFraction":0.625,				# 0.25 / 1
+	"ext_hullmodSalvageDropFraction":0.75,			# 0.5 / 1
+
+	# Other loot
+	"ext_specialItemSalvageDropFraction":0.75,		# 0.5 / 1
+	"ext_commoditySalvageDropFraction":0.65,		# 0.3 / 1
+	"ext_sleeperPodsSpecialCrewFraction":0.65,		# 0.3 / 1
+	"ext_salvageCargoFractionPostCombat":0.575,		# 0.4 / 0.75
+	"ext_threatResourceSalvageMult":0.625,			# 0.25 / 1
+	"ext_aiCoreDropFraction":0.55,					# 0.1 / 1
+	"ext_substrateDropFraction":0.7,				# 0.4 / 1
+
+	# Fuel
+	"ext_fuelCapacityMult":0.75,					# 0.5 / 1
+	"ext_fuelCapacityMultTanker":0.675,				# 0.35 / 1
+	"ext_fuelUseMult":["core_clearArray", 1, 1, 1.25, 1.5],	# [1, 1, 1.5, 2] / 1
+
+	# Crew, supplies, fuel and goods for sale
+	"ext_crewForSaleFraction":0.6,					# 0.2 / 1
+	"ext_suppliesForSaleFraction":0.7,				# 0.4 / 1
+	"ext_fuelForSaleFraction":0.8,					# 0.6 / 1
+	"ext_marinesForSaleFraction":0.6,				# 0.2 / 1
+	"ext_drugsForSaleFraction":0.65,				# 0.3 / 1
+	"ext_organsForSaleFraction":0.65,				# 0.3 / 1
+	"ext_hand_weaponsForSaleFraction":0.6,			# 0.2 / 1
+	"ext_drugsForSaleFractionFreePort":0.575,		# 0.15 / 1
+	"ext_organsForSaleFractionFreePort":0.575,		# 0.15 / 1
+	"ext_hand_weaponsForSaleFractionFreePort":0.55,	# 0.1 / 1
+	"ext_crewForSaleFractionPlayerColony":0.75,		# 0.5 / 1
+	"ext_suppliesForSaleFractionPlayerColony":0.825,	# 0.65 / 1
+	"ext_fuelForSaleFractionPlayerColony":0.875,	# 0.75 / 1
+	"ext_marinesForSaleFractionPlayerColony":0.75,	# 0.5 / 1
+	"ext_localResourcesStockpileAndRateMult":0.65,	# 0.3 / 1
+
+	# Commissions and fleet services
+	"ext_commissionMonthlyIncomeMult":0.55,			# 0.1 / 1
+	"ext_taskForceCostMult":1.5,					# 2 / 1
+	"ext_resupplyFleetCostMult":1.25,				# 1.5 / 1
+	"ext_resupplyCrewBroughtMult":0.625,			# 0.25 / 1
+
+	# Personnel and fuel prices
+	"ext_crewPriceMult":5.5,						# 10 / 1
+	"ext_marinesPriceMult":2.5,						# 4 / 1
+	"ext_fuelPriceMult":2,							# 3 / 1
+	"ext_personnelSellPriceMult":0.18,				# 0.1 (keeps crew bought and sold back at about the normal price)
+
+	# Salaries
+	"ext_crewSalaryMult":2,							# 3 / 1
+	"ext_marineSalaryMult":2,						# 3 / 1
+	"ext_officerCombatPay":["core_clearArray", 0.5, 1, 2, 8],	# [1, 2, 4, 16] / none (frigate, destroyer, cruiser, capital)
+
+	# Colonies
+	"ext_colonyGrowthRequiredMult":1.5,				# 2 / 1
+	"ext_corruptionThreshold":400000,				# 200000 / none
+	"ext_corruptionExponent":1.5,					# 2 / none
+	"ext_establishColonyMachinery":150,				# 200 / 100
+	"ext_establishColonySupplies":350,				# 500 / 200
+	"ext_industryCostMult":1.5,						# 2 / 1
+	"ext_industryBuiltTimeMult":1.5,				# 2 / 1
+	"ext_surveyCrewMult":1.25,						# 1.5 / 1
+	"ext_surveyMachineryMult":1.25,					# 1.5 / 1
+
+	# Officers and administrators
+	"ext_officersAvailableFraction":0.575,			# 0.15 / 1
+	"ext_cryopodOfficersFraction":0.75,				# 0.5 / 1
+	"ext_cryopodAdminsFraction":0.55,				# 0.1 / 1
+	"ext_adminAvailableFraction":0.55,				# 0.1 / 1
+
+	# Tariffs
+	"ext_normalTariff":0.35,						# 0.4 / 0.3
+	"ext_blackMarketTariff":0.125,					# 0.25 / 0
+
+	# Missions and events
+	"ext_analyzeMissionSensorStrengthAboveBaseRequired":100,	# 200 / none
+	"ext_ZGRTurnInValueMult":0.65,					# 0.3 / 1
+	"ext_extraSpacerDebtPerLevel":1000,				# 2000 / 0
+	"ext_deliveryMissionHighQuantityChanceMult":0.55,	# 0.1 / 1
+	"ext_worseHandMeDownFreighterPriceMult":1.5,	# 2 / 1
+	"ext_hijackedShipCostMult":1.5,					# 2 / 1
+	"ext_surplusHullPriceMult":1.5,					# 2 / 1
+
+	# Hazards and cargo scans
+	"ext_cargoScanFindContrabandMult":1.5,			# 2 / 1
+	"ext_cargoScanNumShipsMult":2.5,				# 4 / 1
+	"ext_cargoScanShipDamageMult":1.5,				# 2 / 1
+	"ext_environmentalDamageMult":1.5,				# 2 / 1
+	"ext_transverseJumpDamageMult":5.5,				# 10 / 1
+
+	# Story points and bonus experience
+	"ext_storyPointsPerLevel":3,					# 2 / 4
+	"ext_bonusXP_cleanDisengage":0.5,				# 0 / 1
+	"ext_bonusXP_avoidCargoScan":0.75,				# 0.5 / 1
+	"ext_bonusXP_recoverNoBonusXPDeploymentPoints":17,	# 5 / 30
+	"ext_recoveryNonOwnSPCost":["core_clearArray", 1, 1, 1, 2],	# [1, 1, 2, 4] / 1
+	"ext_recoveryNonOwnSPCostCiv":["core_clearArray", 1, 1, 1, 1],	# [1, 1, 1, 2] / 1
+}

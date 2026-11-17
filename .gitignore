@@ -1,0 +1,8 @@
+# Staging folder and release archive, both made by `python build.py`.
+# Root-anchored: an unanchored rule would also hide same-named folders elsewhere on case-insensitive Windows.
+/SurvivalModeLite/
+/SurvivalModeLite.zip
+/SurvivalModeLite-*.zip
+
+.claude/
+__pycache__/

@@ -1,0 +1,3 @@
+Version 1.0.0 (2026-11-17)
+- First release. Survival mode with half the penalties: every survival number (prices, items for sale, loot, fuel, salaries, colony costs, officers for hire, story points, retirement and more) sits halfway between normal and survival.
+- Only campaigns started in Survival mode change.
