@@ -9,19 +9,32 @@ Tasks, history and test lists: the **Survival Mode - Lite board** in Andrzej's N
 **Starsector mods** (`collection://41b20ca7-5d20-81a5-a3bf-000b03c48e3e`). Ticket ids start with SML.
 Read the board with `notion-query-data-sources` mode `view` on `view://41b20ca7-5d20-81b5-9b17-000c82200ee7`.
 SML-1 holds Andrzej's original request word for word and the full list of what survival mode does.
+Forum topic 36456.
 
 ## Build
 
-`python build.py` checks the settings against the game's settings.json and writes `SurvivalModeLite.zip`
-here (staging folder `SurvivalModeLite`). No code, no jar.
+`python build.py` does everything: it generates the data files and docs from `values.py`, compiles
+`jars/SurvivalModeLite.jar` (javac, Java 17, against the game and LunaLib), and writes `SurvivalModeLite.zip`
+here (staging folder `SurvivalModeLite`).
+
+## values.py is the source
+
+One row per survival value: tab, label, setting key, list index, unit, survival, lite, vanilla, note.
+build.py turns it into `data/config/settings.json` (Lite defaults), `data/config/LunaSettings.csv` (one
+LunaLib field per row, one tab per group), `data/config/survival_mode_lite_fields.json` (field id to key,
+read by the plugin), the tables in README.md and `forum-post.txt` (from `forum-post.template.txt`).
+Never edit the generated files by hand. Field ids are `sml_` + key without `ext_` (+ `_<index>`): keep them
+stable, LunaLib stores the player's values under them.
 
 ## How it works
 
 - Survival mode is the 0.98.5a "extended mode" (`SectorAPI.isExtMode()`, `Misc.isExtended()`), chosen at
   new game. Nearly all of it reads `ext_` keys from `starsector-core/data/config/settings.json`.
-- The mod ships `data/config/settings.json` with lighter `ext_` values. The game merges it over the base
-  file at startup, before anything reads it (some values are cached in statics, for example
-  `Tuning.EXT_DELAY_FACTOR`, so changing them at runtime would not work).
-- The game appends lists when merging, so every list starts with `"core_clearArray"` (0.98.5a drops the
-  marker from the merged list). Merged plain values become strings; `getFloat` and `getInt` still read them.
-- Rule: every penalty halfway between normal and survival. Things that help the player and yes/no rules stay.
+- settings.json is merged over the base file at startup. The merge appends lists, so lists start with
+  `"core_clearArray"`. Merged plain values become strings; `getFloat`/`getInt` still read them.
+- With LunaLib, `SurvivalModeLitePlugin` copies the LunaLib values into the game's settings at application
+  load, on every game load and when the player changes them (`SettingsAPI.setFloat`/`setBoolean`, lists
+  changed in place in `getSettingsJSON()`). The game reads these keys live through StarfarerSettings' float
+  cache, which setFloat updates. The only copy taken at startup is `Tuning.EXT_DELAY_FACTOR`, set directly.
+- Units: pct and per100 are edited in LunaLib times 100, because LunaLib's slider rounds to 2 decimals.
+- `LunaBridge` is the only class naming LunaLib, loaded only when LunaLib is enabled.

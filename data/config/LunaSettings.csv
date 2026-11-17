@@ -1,0 +1,150 @@
+fieldID,fieldName,fieldType,defaultValue,secondaryValue,fieldDescription,minValue,maxValue,tab
+sml_intro,Intro,Text,"Every value starts at Lite, halfway between vanilla and survival. Each description gives the survival and the vanilla value. Only campaigns started in Survival mode use these. Changes apply at once, unless the description says otherwise.",,,,,Prices
+sml_header_prices,Prices Header,Header,Prices,,,,,Prices
+sml_shipBuyPriceMult_0,Frigate prices,Double,3,,Survival: x5. Vanilla: x1.,0,12.5,Prices
+sml_shipBuyPriceMult_1,Destroyer prices,Double,3,,Survival: x5. Vanilla: x1.,0,12.5,Prices
+sml_shipBuyPriceMult_2,Cruiser prices,Double,3.5,,Survival: x6. Vanilla: x1.,0,15,Prices
+sml_shipBuyPriceMult_3,Capital ship prices,Double,4.5,,Survival: x8. Vanilla: x1.,0,20,Prices
+sml_weaponPriceMult,Weapon prices,Double,5.5,,Survival: x10. Vanilla: x1.,0,25,Prices
+sml_fighterPriceMult,Fighter LPC prices,Double,3,,Survival: x5. Vanilla: x1.,0,12.5,Prices
+sml_hullmodPriceMult,Hull mod spec prices,Double,4,,Survival: x7. Vanilla: x1.,0,17.5,Prices
+sml_blueprintSellPriceMult,Blueprint sell price,Double,65,,Survival: 30%. Vanilla: 100%.,0,200,Prices
+sml_partsPriceMult,Domain-grade parts price,Double,1.5,,Survival: x2. Vanilla: x1.,0,10,Prices
+sml_crewPriceMult,Crew price,Double,5.5,,Survival: x10. Vanilla: x1.,0,25,Prices
+sml_marinesPriceMult,Marine price,Double,2.5,,Survival: x4. Vanilla: x1.,0,10,Prices
+sml_fuelPriceMult,Fuel price,Double,2,,Survival: x3. Vanilla: x1.,0,10,Prices
+sml_personnelSellPriceMult,Crew and marines sold back,Double,18,,Survival: 10%. Vanilla: 100%. Share of the raised price you get back. 100% divided by the crew price keeps buying and selling even.,0,200,Prices
+sml_normalTariff,Open market tariff,Double,35,,Survival: 40%. Vanilla: 30%.,0,100,Prices
+sml_blackMarketTariff,Black market tariff,Double,12.5,,Survival: 25%. Vanilla: 0%.,0,100,Prices
+sml_worseHandMeDownFreighterPriceMult,Hand-me-down freighter mission: extra price,Double,1.5,,Survival: x2. Vanilla: x1.,0,10,Prices
+sml_hijackedShipCostMult,Hijacked ship mission: extra price,Double,1.5,,Survival: x2. Vanilla: x1.,0,10,Prices
+sml_surplusHullPriceMult,Surplus hull mission: extra price,Double,1.5,,Survival: x2. Vanilla: x1.,0,10,Prices
+sml_taskForceCostMult,Task force cost,Double,1.5,,Survival: x2. Vanilla: x1.,0,10,Prices
+sml_resupplyFleetCostMult,Resupply fleet cost,Double,1.25,,Survival: x1.5. Vanilla: x1.,0,10,Prices
+sml_resupplyCrewBroughtMult,Crew a resupply fleet brings,Double,62.5,,Survival: 25%. Vanilla: 100%.,0,200,Prices
+sml_header_pay,Pay Header,Header,Pay,,,,,Pay
+sml_crewSalaryMult,Crew salary,Double,2,,Survival: x3. Vanilla: x1.,0,10,Pay
+sml_marineSalaryMult,Marine salary,Double,2,,Survival: x3. Vanilla: x1.,0,10,Pay
+sml_officerCombatPay_0,"Officer pay per battle, frigate (months of salary)",Double,0.5,,Survival: 1. Vanilla: none.,0,3,Pay
+sml_officerCombatPay_1,"Officer pay per battle, destroyer (months of salary)",Double,1,,Survival: 2. Vanilla: none.,0,6,Pay
+sml_officerCombatPay_2,"Officer pay per battle, cruiser (months of salary)",Double,2,,Survival: 4. Vanilla: none.,0,12,Pay
+sml_officerCombatPay_3,"Officer pay per battle, capital (months of salary)",Double,8,,Survival: 16. Vanilla: none.,0,48,Pay
+sml_commissionMonthlyIncomeMult,Commission monthly pay,Double,55,,Survival: 10%. Vanilla: 100%.,0,200,Pay
+sml_header_markets,What markets sell Header,Header,What markets sell,,,,,Markets
+sml_shipForSaleFraction,Ships for sale,Double,62.5,,Survival: 25%. Vanilla: 100%.,0,200,Markets
+sml_shipForSaleQualityMod,Quality of ships for sale,Double,-17.5,,Survival: -35%. Vanilla: 0%. Lower means more d-mods.,-100,100,Markets
+sml_weaponForSaleFraction,Weapons for sale,Double,60,,Survival: 20%. Vanilla: 100%.,0,200,Markets
+sml_fighterForSaleFraction,Fighter LPCs for sale,Double,60,,Survival: 20%. Vanilla: 100%.,0,200,Markets
+sml_hullmodForSaleFraction,Hull mod specs for sale,Double,67.5,,Survival: 35%. Vanilla: 100%.,0,200,Markets
+sml_crewForSaleFraction,Crew for sale,Double,60,,Survival: 20%. Vanilla: 100%.,0,200,Markets
+sml_marinesForSaleFraction,Marines for sale,Double,60,,Survival: 20%. Vanilla: 100%.,0,200,Markets
+sml_suppliesForSaleFraction,Supplies for sale,Double,70,,Survival: 40%. Vanilla: 100%.,0,200,Markets
+sml_fuelForSaleFraction,Fuel for sale,Double,80,,Survival: 60%. Vanilla: 100%.,0,200,Markets
+sml_drugsForSaleFraction,Drugs for sale,Double,65,,Survival: 30%. Vanilla: 100%.,0,200,Markets
+sml_organsForSaleFraction,Organs for sale,Double,65,,Survival: 30%. Vanilla: 100%.,0,200,Markets
+sml_hand_weaponsForSaleFraction,Heavy armaments for sale,Double,60,,Survival: 20%. Vanilla: 100%.,0,200,Markets
+sml_drugsForSaleFractionFreePort,Drugs at free ports,Double,57.5,,Survival: 15%. Vanilla: 100%.,0,200,Markets
+sml_organsForSaleFractionFreePort,Organs at free ports,Double,57.5,,Survival: 15%. Vanilla: 100%.,0,200,Markets
+sml_hand_weaponsForSaleFractionFreePort,Heavy armaments at free ports,Double,55,,Survival: 10%. Vanilla: 100%.,0,200,Markets
+sml_crewForSaleFractionPlayerColony,Crew at your colonies,Double,75,,Survival: 50%. Vanilla: 100%.,0,200,Markets
+sml_marinesForSaleFractionPlayerColony,Marines at your colonies,Double,75,,Survival: 50%. Vanilla: 100%.,0,200,Markets
+sml_suppliesForSaleFractionPlayerColony,Supplies at your colonies,Double,82.5,,Survival: 65%. Vanilla: 100%.,0,200,Markets
+sml_fuelForSaleFractionPlayerColony,Fuel at your colonies,Double,87.5,,Survival: 75%. Vanilla: 100%.,0,200,Markets
+sml_localResourcesStockpileAndRateMult,Your colonies' local resources stockpile,Double,65,,Survival: 30%. Vanilla: 100%.,0,200,Markets
+sml_header_loot,Loot and recovery Header,Header,Loot and recovery,,,,,Loot
+sml_shipRecoverableFraction,Enemy ships recoverable after battle,Double,60,,Survival: 20%. Vanilla: 100%.,0,200,Loot
+sml_derelictShipRecoverableFraction,Derelict ships recoverable,Double,55,,Survival: 10%. Vanilla: 100%. Only takes effect when a new sector is made.,0,200,Loot
+sml_shipRecoveryWithStoryPointsFraction,Derelicts that offer the story point recovery,Double,60,,Survival: 20%. Vanilla: 100%.,0,200,Loot
+sml_recoveryNonOwnSPCost_0,Story points to recover a frigate,Int,1,,Survival: 1. Vanilla: 1.,0,10,Loot
+sml_recoveryNonOwnSPCost_1,Story points to recover a destroyer,Int,1,,Survival: 1. Vanilla: 1.,0,10,Loot
+sml_recoveryNonOwnSPCost_2,Story points to recover a cruiser,Int,1,,Survival: 2. Vanilla: 1.,0,10,Loot
+sml_recoveryNonOwnSPCost_3,Story points to recover a capital,Int,2,,Survival: 4. Vanilla: 1.,0,16,Loot
+sml_recoveryNonOwnSPCostCiv_0,Story points to recover a civilian frigate,Int,1,,Survival: 1. Vanilla: 1.,0,10,Loot
+sml_recoveryNonOwnSPCostCiv_1,Story points to recover a civilian destroyer,Int,1,,Survival: 1. Vanilla: 1.,0,10,Loot
+sml_recoveryNonOwnSPCostCiv_2,Story points to recover a civilian cruiser,Int,1,,Survival: 1. Vanilla: 1.,0,10,Loot
+sml_recoveryNonOwnSPCostCiv_3,Story points to recover a civilian capital,Int,1,,Survival: 2. Vanilla: 1.,0,10,Loot
+sml_weaponDropFraction,Weapons dropped by enemies,Double,55,,Survival: 10%. Vanilla: 100%.,0,200,Loot
+sml_weaponSalvageDropFraction,Weapons from salvage,Double,60,,Survival: 20%. Vanilla: 100%.,0,200,Loot
+sml_fighterDropFraction,Fighter LPCs dropped by enemies,Double,60,,Survival: 20%. Vanilla: 100%.,0,200,Loot
+sml_fighterSalvageDropFraction,Fighter LPCs from salvage,Double,65,,Survival: 30%. Vanilla: 100%.,0,200,Loot
+sml_hullmodDropFraction,Hull mod specs dropped by enemies,Double,62.5,,Survival: 25%. Vanilla: 100%.,0,200,Loot
+sml_hullmodSalvageDropFraction,Hull mod specs from salvage,Double,75,,Survival: 50%. Vanilla: 100%.,0,200,Loot
+sml_specialItemSalvageDropFraction,Special items from salvage,Double,75,,Survival: 50%. Vanilla: 100%.,0,200,Loot
+sml_commoditySalvageDropFraction,Commodities from salvage,Double,65,,Survival: 30%. Vanilla: 100%.,0,200,Loot
+sml_sleeperPodsSpecialCrewFraction,Crew from sleeper pods,Double,65,,Survival: 30%. Vanilla: 100%.,0,200,Loot
+sml_salvageCargoFractionPostCombat,Cargo salvaged after battle,Double,57.5,,Survival: 40%. Vanilla: 75%.,0,150,Loot
+sml_threatResourceSalvageMult,Resources from Threat fleets,Double,62.5,,Survival: 25%. Vanilla: 100%.,0,200,Loot
+sml_aiCoreDropFraction,AI cores dropped,Double,55,,Survival: 10%. Vanilla: 100%.,0,200,Loot
+sml_substrateDropFraction,Dweller substrate dropped,Double,70,,Survival: 40%. Vanilla: 100%.,0,200,Loot
+sml_partsSpecialSalvageDropFraction,Domain-grade parts from special salvage,Double,75,,Survival: 50%. Vanilla: 100%.,0,200,Loot
+sml_partsPerUnitOfSupplies,Domain-grade parts per 100 supplies salvaged,Double,3.75,,Survival: 2.5. Vanilla: 5.,0,20,Loot
+sml_header_fuel,Fuel Header,Header,Fuel,,,,,Fuel
+sml_fuelCapacityMult,Fuel tank size,Double,75,,Survival: 50%. Vanilla: 100%.,0,200,Fuel
+sml_fuelCapacityMultTanker,Tanker fuel tank size,Double,67.5,,Survival: 35%. Vanilla: 100%.,0,200,Fuel
+sml_fuelUseMult_0,"Fuel use, frigates",Double,1,,Survival: x1. Vanilla: x1.,0,10,Fuel
+sml_fuelUseMult_1,"Fuel use, destroyers",Double,1,,Survival: x1. Vanilla: x1.,0,10,Fuel
+sml_fuelUseMult_2,"Fuel use, cruisers",Double,1.25,,Survival: x1.5. Vanilla: x1.,0,10,Fuel
+sml_fuelUseMult_3,"Fuel use, capitals",Double,1.5,,Survival: x2. Vanilla: x1.,0,10,Fuel
+sml_header_colonies,Colonies Header,Header,Colonies,,,,,Colonies
+sml_colonyGrowthRequiredMult,Colony growth needed,Double,1.5,,Survival: x2. Vanilla: x1.,0,10,Colonies
+sml_industryCostMult,Building cost,Double,1.5,,Survival: x2. Vanilla: x1.,0,10,Colonies
+sml_industryBuiltTimeMult,Building build time,Double,1.5,,Survival: x2. Vanilla: x1.,0,10,Colonies
+sml_corruptionThreshold,Corruption starts at monthly income,Int,400000,,"Survival: 200,000. Vanilla: never.",0,5000000,Colonies
+sml_corruptionExponent,Corruption power,Double,1.5,,Survival: 2. Vanilla: none. 2 means 4 times the income doubles the tax. Higher is harsher.,1,5,Colonies
+sml_establishColonyMachinery,Heavy machinery to found a colony,Int,150,,Survival: 200. Vanilla: 100.,0,800,Colonies
+sml_establishColonySupplies,Supplies to found a colony,Int,350,,Survival: 500. Vanilla: 200.,0,2000,Colonies
+sml_surveyCrewMult,Survey crew cost,Double,1.25,,Survival: x1.5. Vanilla: x1.,0,10,Colonies
+sml_surveyMachineryMult,Survey heavy machinery cost,Double,1.25,,Survival: x1.5. Vanilla: x1.,0,10,Colonies
+sml_header_officers,Officers and administrators Header,Header,Officers and administrators,,,,,Officers
+sml_officersAvailableFraction,Officers for hire (also crew promotion offers),Double,57.5,,Survival: 15%. Vanilla: 100%.,0,200,Officers
+sml_adminAvailableFraction,Administrators for hire,Double,55,,Survival: 10%. Vanilla: 100%.,0,200,Officers
+sml_cryopodOfficersFraction,Officers in cryopods,Double,75,,Survival: 50%. Vanilla: 100%.,0,200,Officers
+sml_cryopodAdminsFraction,Administrators in cryopods,Double,55,,Survival: 10%. Vanilla: 100%.,0,200,Officers
+sml_header_experience,Story points and experience Header,Header,Story points and experience,,,,,Experience
+sml_storyPointsPerLevel,Story points per level,Int,3,,Survival: 2. Vanilla: 4.,0,16,Experience
+sml_bonusXP_cleanDisengage,Bonus XP for a clean disengage,Double,50,,Survival: 0%. Vanilla: 100%.,0,200,Experience
+sml_bonusXP_avoidCargoScan,Bonus XP for avoiding a cargo scan,Double,75,,Survival: 50%. Vanilla: 100%.,0,200,Experience
+sml_bonusXP_recoverNoBonusXPDeploymentPoints,Recovering a ship gives no bonus XP from (DP),Int,17,,Survival: 5. Vanilla: 30.,0,120,Experience
+sml_header_hazards,Hazards and missions Header,Header,Hazards and missions,,,,,Hazards
+sml_environmentalDamageMult,Hyperstorm and asteroid damage,Double,1.5,,Survival: x2. Vanilla: x1.,0,10,Hazards
+sml_transverseJumpDamageMult,Transverse Jump CR loss,Double,5.5,,Survival: x10. Vanilla: x1.,0,25,Hazards
+sml_cargoScanFindContrabandMult,Cargo scan: chance to find contraband,Double,1.5,,Survival: x2. Vanilla: x1.,0,10,Hazards
+sml_cargoScanNumShipsMult,Cargo scan: penalty spread over ships,Double,2.5,,Survival: x4. Vanilla: x1.,0,10,Hazards
+sml_cargoScanShipDamageMult,Cargo scan: CR lost,Double,1.5,,Survival: x2. Vanilla: x1.,0,10,Hazards
+sml_analyzeMissionSensorStrengthAboveBaseRequired,Sensor strength above base needed for Analyze missions,Int,100,,Survival: 200. Vanilla: none.,0,800,Hazards
+sml_ZGRTurnInValueMult,Value of specimens turned in to Inesis,Double,65,,Survival: 30%. Vanilla: 100%.,0,200,Hazards
+sml_deliveryMissionHighQuantityChanceMult,Delivery missions with large amounts,Double,55,,Survival: 10%. Vanilla: 100%.,0,200,Hazards
+sml_header_retirement,Retirement and the spacer start Header,Header,Retirement and the spacer start,,,,,Retirement
+sml_retirementMinCycles,"Retirement, earliest cycle",Int,40,,Survival: 25. Vanilla: never. 0 turns retirement off. Keep it at or below the latest cycle.,0,200,Retirement
+sml_retirementMaxCycles,"Retirement, latest cycle",Int,50,,Survival: 30. Vanilla: never.,0,200,Retirement
+sml_retirementDelayCostBase,"Cost to delay retirement, base",Int,10000,,"Survival: 20,000. Vanilla: none.",0,80000,Retirement
+sml_retirementDelayCostPerMonth,"Cost to delay retirement, per month",Int,500,,"Survival: 1,000. Vanilla: none.",0,4000,Retirement
+sml_retirementDelayCostMax,"Cost to delay retirement, at most",Int,25000,,"Survival: 50,000. Vanilla: none.",0,200000,Retirement
+sml_spacerSharePerMonth,Spacer start: monthly share of credits above 12 months of pay,Double,5,,Survival: 10%. Vanilla: none.,0,100,Retirement
+sml_extraSpacerDebtPerLevel,Spacer start: extra debt per level,Int,1000,,"Survival: 2,000. Vanilla: 0.",0,8000,Retirement
+sml_header_survival_help,Things survival mode makes easier Header,Header,Things survival mode makes easier,,,,,Survival help
+sml_timeBasedThingsDelayFactor,Threats that grow with time: slowdown,Double,3,,"Survival: x3. Vanilla: x1. Pirate raids, pirate base strength and the like grow this many times slower.",0,10,Survival help
+sml_partsForSaleFraction,Domain-grade parts for sale,Double,2,,Survival: x2. Vanilla: x1.,0,10,Survival help
+sml_barCustomProductionMaxValueMult,Custom production order size (bar contacts),Double,3,,Survival: x3. Vanilla: x1.,0,10,Survival help
+sml_playerIndustryCustomProductionMaxValueMult,Custom production order size (your industry),Double,3,,Survival: x3. Vanilla: x1.,0,10,Survival help
+sml_shipStoragePriceMult,Ship storage fee,Double,50,,Survival: 50%. Vanilla: 100%.,0,200,Survival help
+sml_shipSellValueIncreasePerPartUsed,Ship sell value per Domain-grade part used on d-mods,Int,5000,,"Survival: 5,000. Vanilla: 0.",0,20000,Survival help
+sml_shipSellValueMultPerSMod,Ship sell value per S-mod,Double,100,,Survival: 100%. Vanilla: 0%.,0,200,Survival help
+sml_crewForSaleMilitaryMult,Crew at military markets,Double,1.5,,Survival: x1.5. Vanilla: x1.,0,10,Survival help
+sml_marinesForSaleMilitaryMult,Marines at military markets,Double,1.5,,Survival: x1.5. Vanilla: x1.,0,10,Survival help
+sml_suppliesForSaleMilitaryMult,Supplies at military markets,Double,1.2,,Survival: x1.2. Vanilla: x1.,0,10,Survival help
+sml_fuelForSaleMilitaryMult,Fuel at military markets,Double,1.2,,Survival: x1.2. Vanilla: x1.,0,10,Survival help
+sml_personnelForSaleMinMultBadRep,Personnel for sale at bad reputation,Double,25,,Survival: 25%. Vanilla: no effect.,0,100,Survival help
+sml_personnelForSaleMaxMultGoodRep,Personnel for sale at good reputation,Double,200,,Survival: 200%. Vanilla: no effect.,0,400,Survival help
+sml_weaponAndFighterSellPriceMult,Weapons and fighters sold back,Double,1.5,,Survival: x1.5. Vanilla: vanilla ratio. Applied after the raised price.,0,10,Survival help
+sml_hullmodSellPriceMult,Hull mod specs sold back,Double,25,,Survival: 25%. Vanilla: vanilla ratio. Applied after the raised price.,0,100,Survival help
+sml_shipBuyPriceMultPerDMod,Ship price kept per d-mod,Double,85,,Survival: 85%. Vanilla: none.,0,170,Survival help
+sml_header_rules,Survival rules Header,Header,Survival rules,,,,,Rules
+sml_militaryMarketRequiresCommission,Military market needs a commission,Boolean,true,,Survival: yes. Vanilla: no.,,,Rules
+sml_removeGalatiaStipend,Galatia Academy stipend removed,Boolean,true,,Survival: yes. Vanilla: no. Only takes effect in a new game.,,,Rules
+sml_reduceLegionXIVSpawns,Fewer Legion XIV wrecks,Boolean,true,,Survival: yes. Vanilla: no. Only takes effect when a new sector is made.,,,Rules
+sml_reduceDerelictQuality,Derelicts in worse condition,Boolean,true,,Survival: yes. Vanilla: no. Only takes effect when a new sector is made.,,,Rules
+sml_strongerAlphaSiteDefenders,Stronger Alpha Site defenders,Boolean,true,,Survival: yes. Vanilla: no. Only takes effect when a new sector is made.,,,Rules
+sml_moreDangerousMkIThreat,More dangerous Mk I Threat,Boolean,true,,Survival: yes. Vanilla: no.,,,Rules
+sml_worseHandMeDownFreighter,Worse hand-me-down freighter (5 d-mods),Boolean,true,,Survival: yes. Vanilla: no.,,,Rules
+sml_analyzeMissionRequiresSensorStrength,Analyze missions need sensor strength,Boolean,true,,Survival: yes. Vanilla: no.,,,Rules

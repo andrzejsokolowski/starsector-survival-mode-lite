@@ -1,0 +1,704 @@
+{
+ "fields": [
+  {
+   "id": "sml_shipBuyPriceMult_0",
+   "key": "ext_shipBuyPriceMult",
+   "unit": "x",
+   "index": 0
+  },
+  {
+   "id": "sml_shipBuyPriceMult_1",
+   "key": "ext_shipBuyPriceMult",
+   "unit": "x",
+   "index": 1
+  },
+  {
+   "id": "sml_shipBuyPriceMult_2",
+   "key": "ext_shipBuyPriceMult",
+   "unit": "x",
+   "index": 2
+  },
+  {
+   "id": "sml_shipBuyPriceMult_3",
+   "key": "ext_shipBuyPriceMult",
+   "unit": "x",
+   "index": 3
+  },
+  {
+   "id": "sml_weaponPriceMult",
+   "key": "ext_weaponPriceMult",
+   "unit": "x"
+  },
+  {
+   "id": "sml_fighterPriceMult",
+   "key": "ext_fighterPriceMult",
+   "unit": "x"
+  },
+  {
+   "id": "sml_hullmodPriceMult",
+   "key": "ext_hullmodPriceMult",
+   "unit": "x"
+  },
+  {
+   "id": "sml_blueprintSellPriceMult",
+   "key": "ext_blueprintSellPriceMult",
+   "unit": "pct"
+  },
+  {
+   "id": "sml_partsPriceMult",
+   "key": "ext_partsPriceMult",
+   "unit": "x"
+  },
+  {
+   "id": "sml_crewPriceMult",
+   "key": "ext_crewPriceMult",
+   "unit": "x"
+  },
+  {
+   "id": "sml_marinesPriceMult",
+   "key": "ext_marinesPriceMult",
+   "unit": "x"
+  },
+  {
+   "id": "sml_fuelPriceMult",
+   "key": "ext_fuelPriceMult",
+   "unit": "x"
+  },
+  {
+   "id": "sml_personnelSellPriceMult",
+   "key": "ext_personnelSellPriceMult",
+   "unit": "pct"
+  },
+  {
+   "id": "sml_normalTariff",
+   "key": "ext_normalTariff",
+   "unit": "pct"
+  },
+  {
+   "id": "sml_blackMarketTariff",
+   "key": "ext_blackMarketTariff",
+   "unit": "pct"
+  },
+  {
+   "id": "sml_worseHandMeDownFreighterPriceMult",
+   "key": "ext_worseHandMeDownFreighterPriceMult",
+   "unit": "x"
+  },
+  {
+   "id": "sml_hijackedShipCostMult",
+   "key": "ext_hijackedShipCostMult",
+   "unit": "x"
+  },
+  {
+   "id": "sml_surplusHullPriceMult",
+   "key": "ext_surplusHullPriceMult",
+   "unit": "x"
+  },
+  {
+   "id": "sml_taskForceCostMult",
+   "key": "ext_taskForceCostMult",
+   "unit": "x"
+  },
+  {
+   "id": "sml_resupplyFleetCostMult",
+   "key": "ext_resupplyFleetCostMult",
+   "unit": "x"
+  },
+  {
+   "id": "sml_resupplyCrewBroughtMult",
+   "key": "ext_resupplyCrewBroughtMult",
+   "unit": "pct"
+  },
+  {
+   "id": "sml_crewSalaryMult",
+   "key": "ext_crewSalaryMult",
+   "unit": "x"
+  },
+  {
+   "id": "sml_marineSalaryMult",
+   "key": "ext_marineSalaryMult",
+   "unit": "x"
+  },
+  {
+   "id": "sml_officerCombatPay_0",
+   "key": "ext_officerCombatPay",
+   "unit": "num",
+   "index": 0
+  },
+  {
+   "id": "sml_officerCombatPay_1",
+   "key": "ext_officerCombatPay",
+   "unit": "num",
+   "index": 1
+  },
+  {
+   "id": "sml_officerCombatPay_2",
+   "key": "ext_officerCombatPay",
+   "unit": "num",
+   "index": 2
+  },
+  {
+   "id": "sml_officerCombatPay_3",
+   "key": "ext_officerCombatPay",
+   "unit": "num",
+   "index": 3
+  },
+  {
+   "id": "sml_commissionMonthlyIncomeMult",
+   "key": "ext_commissionMonthlyIncomeMult",
+   "unit": "pct"
+  },
+  {
+   "id": "sml_shipForSaleFraction",
+   "key": "ext_shipForSaleFraction",
+   "unit": "pct"
+  },
+  {
+   "id": "sml_shipForSaleQualityMod",
+   "key": "ext_shipForSaleQualityMod",
+   "unit": "pct"
+  },
+  {
+   "id": "sml_weaponForSaleFraction",
+   "key": "ext_weaponForSaleFraction",
+   "unit": "pct"
+  },
+  {
+   "id": "sml_fighterForSaleFraction",
+   "key": "ext_fighterForSaleFraction",
+   "unit": "pct"
+  },
+  {
+   "id": "sml_hullmodForSaleFraction",
+   "key": "ext_hullmodForSaleFraction",
+   "unit": "pct"
+  },
+  {
+   "id": "sml_crewForSaleFraction",
+   "key": "ext_crewForSaleFraction",
+   "unit": "pct"
+  },
+  {
+   "id": "sml_marinesForSaleFraction",
+   "key": "ext_marinesForSaleFraction",
+   "unit": "pct"
+  },
+  {
+   "id": "sml_suppliesForSaleFraction",
+   "key": "ext_suppliesForSaleFraction",
+   "unit": "pct"
+  },
+  {
+   "id": "sml_fuelForSaleFraction",
+   "key": "ext_fuelForSaleFraction",
+   "unit": "pct"
+  },
+  {
+   "id": "sml_drugsForSaleFraction",
+   "key": "ext_drugsForSaleFraction",
+   "unit": "pct"
+  },
+  {
+   "id": "sml_organsForSaleFraction",
+   "key": "ext_organsForSaleFraction",
+   "unit": "pct"
+  },
+  {
+   "id": "sml_hand_weaponsForSaleFraction",
+   "key": "ext_hand_weaponsForSaleFraction",
+   "unit": "pct"
+  },
+  {
+   "id": "sml_drugsForSaleFractionFreePort",
+   "key": "ext_drugsForSaleFractionFreePort",
+   "unit": "pct"
+  },
+  {
+   "id": "sml_organsForSaleFractionFreePort",
+   "key": "ext_organsForSaleFractionFreePort",
+   "unit": "pct"
+  },
+  {
+   "id": "sml_hand_weaponsForSaleFractionFreePort",
+   "key": "ext_hand_weaponsForSaleFractionFreePort",
+   "unit": "pct"
+  },
+  {
+   "id": "sml_crewForSaleFractionPlayerColony",
+   "key": "ext_crewForSaleFractionPlayerColony",
+   "unit": "pct"
+  },
+  {
+   "id": "sml_marinesForSaleFractionPlayerColony",
+   "key": "ext_marinesForSaleFractionPlayerColony",
+   "unit": "pct"
+  },
+  {
+   "id": "sml_suppliesForSaleFractionPlayerColony",
+   "key": "ext_suppliesForSaleFractionPlayerColony",
+   "unit": "pct"
+  },
+  {
+   "id": "sml_fuelForSaleFractionPlayerColony",
+   "key": "ext_fuelForSaleFractionPlayerColony",
+   "unit": "pct"
+  },
+  {
+   "id": "sml_localResourcesStockpileAndRateMult",
+   "key": "ext_localResourcesStockpileAndRateMult",
+   "unit": "pct"
+  },
+  {
+   "id": "sml_shipRecoverableFraction",
+   "key": "ext_shipRecoverableFraction",
+   "unit": "pct"
+  },
+  {
+   "id": "sml_derelictShipRecoverableFraction",
+   "key": "ext_derelictShipRecoverableFraction",
+   "unit": "pct"
+  },
+  {
+   "id": "sml_shipRecoveryWithStoryPointsFraction",
+   "key": "ext_shipRecoveryWithStoryPointsFraction",
+   "unit": "pct"
+  },
+  {
+   "id": "sml_recoveryNonOwnSPCost_0",
+   "key": "ext_recoveryNonOwnSPCost",
+   "unit": "int",
+   "index": 0
+  },
+  {
+   "id": "sml_recoveryNonOwnSPCost_1",
+   "key": "ext_recoveryNonOwnSPCost",
+   "unit": "int",
+   "index": 1
+  },
+  {
+   "id": "sml_recoveryNonOwnSPCost_2",
+   "key": "ext_recoveryNonOwnSPCost",
+   "unit": "int",
+   "index": 2
+  },
+  {
+   "id": "sml_recoveryNonOwnSPCost_3",
+   "key": "ext_recoveryNonOwnSPCost",
+   "unit": "int",
+   "index": 3
+  },
+  {
+   "id": "sml_recoveryNonOwnSPCostCiv_0",
+   "key": "ext_recoveryNonOwnSPCostCiv",
+   "unit": "int",
+   "index": 0
+  },
+  {
+   "id": "sml_recoveryNonOwnSPCostCiv_1",
+   "key": "ext_recoveryNonOwnSPCostCiv",
+   "unit": "int",
+   "index": 1
+  },
+  {
+   "id": "sml_recoveryNonOwnSPCostCiv_2",
+   "key": "ext_recoveryNonOwnSPCostCiv",
+   "unit": "int",
+   "index": 2
+  },
+  {
+   "id": "sml_recoveryNonOwnSPCostCiv_3",
+   "key": "ext_recoveryNonOwnSPCostCiv",
+   "unit": "int",
+   "index": 3
+  },
+  {
+   "id": "sml_weaponDropFraction",
+   "key": "ext_weaponDropFraction",
+   "unit": "pct"
+  },
+  {
+   "id": "sml_weaponSalvageDropFraction",
+   "key": "ext_weaponSalvageDropFraction",
+   "unit": "pct"
+  },
+  {
+   "id": "sml_fighterDropFraction",
+   "key": "ext_fighterDropFraction",
+   "unit": "pct"
+  },
+  {
+   "id": "sml_fighterSalvageDropFraction",
+   "key": "ext_fighterSalvageDropFraction",
+   "unit": "pct"
+  },
+  {
+   "id": "sml_hullmodDropFraction",
+   "key": "ext_hullmodDropFraction",
+   "unit": "pct"
+  },
+  {
+   "id": "sml_hullmodSalvageDropFraction",
+   "key": "ext_hullmodSalvageDropFraction",
+   "unit": "pct"
+  },
+  {
+   "id": "sml_specialItemSalvageDropFraction",
+   "key": "ext_specialItemSalvageDropFraction",
+   "unit": "pct"
+  },
+  {
+   "id": "sml_commoditySalvageDropFraction",
+   "key": "ext_commoditySalvageDropFraction",
+   "unit": "pct"
+  },
+  {
+   "id": "sml_sleeperPodsSpecialCrewFraction",
+   "key": "ext_sleeperPodsSpecialCrewFraction",
+   "unit": "pct"
+  },
+  {
+   "id": "sml_salvageCargoFractionPostCombat",
+   "key": "ext_salvageCargoFractionPostCombat",
+   "unit": "pct"
+  },
+  {
+   "id": "sml_threatResourceSalvageMult",
+   "key": "ext_threatResourceSalvageMult",
+   "unit": "pct"
+  },
+  {
+   "id": "sml_aiCoreDropFraction",
+   "key": "ext_aiCoreDropFraction",
+   "unit": "pct"
+  },
+  {
+   "id": "sml_substrateDropFraction",
+   "key": "ext_substrateDropFraction",
+   "unit": "pct"
+  },
+  {
+   "id": "sml_partsSpecialSalvageDropFraction",
+   "key": "ext_partsSpecialSalvageDropFraction",
+   "unit": "pct"
+  },
+  {
+   "id": "sml_partsPerUnitOfSupplies",
+   "key": "ext_partsPerUnitOfSupplies",
+   "unit": "per100"
+  },
+  {
+   "id": "sml_fuelCapacityMult",
+   "key": "ext_fuelCapacityMult",
+   "unit": "pct"
+  },
+  {
+   "id": "sml_fuelCapacityMultTanker",
+   "key": "ext_fuelCapacityMultTanker",
+   "unit": "pct"
+  },
+  {
+   "id": "sml_fuelUseMult_0",
+   "key": "ext_fuelUseMult",
+   "unit": "x",
+   "index": 0
+  },
+  {
+   "id": "sml_fuelUseMult_1",
+   "key": "ext_fuelUseMult",
+   "unit": "x",
+   "index": 1
+  },
+  {
+   "id": "sml_fuelUseMult_2",
+   "key": "ext_fuelUseMult",
+   "unit": "x",
+   "index": 2
+  },
+  {
+   "id": "sml_fuelUseMult_3",
+   "key": "ext_fuelUseMult",
+   "unit": "x",
+   "index": 3
+  },
+  {
+   "id": "sml_colonyGrowthRequiredMult",
+   "key": "ext_colonyGrowthRequiredMult",
+   "unit": "x"
+  },
+  {
+   "id": "sml_industryCostMult",
+   "key": "ext_industryCostMult",
+   "unit": "x"
+  },
+  {
+   "id": "sml_industryBuiltTimeMult",
+   "key": "ext_industryBuiltTimeMult",
+   "unit": "x"
+  },
+  {
+   "id": "sml_corruptionThreshold",
+   "key": "ext_corruptionThreshold",
+   "unit": "int"
+  },
+  {
+   "id": "sml_corruptionExponent",
+   "key": "ext_corruptionExponent",
+   "unit": "num"
+  },
+  {
+   "id": "sml_establishColonyMachinery",
+   "key": "ext_establishColonyMachinery",
+   "unit": "int"
+  },
+  {
+   "id": "sml_establishColonySupplies",
+   "key": "ext_establishColonySupplies",
+   "unit": "int"
+  },
+  {
+   "id": "sml_surveyCrewMult",
+   "key": "ext_surveyCrewMult",
+   "unit": "x"
+  },
+  {
+   "id": "sml_surveyMachineryMult",
+   "key": "ext_surveyMachineryMult",
+   "unit": "x"
+  },
+  {
+   "id": "sml_officersAvailableFraction",
+   "key": "ext_officersAvailableFraction",
+   "unit": "pct"
+  },
+  {
+   "id": "sml_adminAvailableFraction",
+   "key": "ext_adminAvailableFraction",
+   "unit": "pct"
+  },
+  {
+   "id": "sml_cryopodOfficersFraction",
+   "key": "ext_cryopodOfficersFraction",
+   "unit": "pct"
+  },
+  {
+   "id": "sml_cryopodAdminsFraction",
+   "key": "ext_cryopodAdminsFraction",
+   "unit": "pct"
+  },
+  {
+   "id": "sml_storyPointsPerLevel",
+   "key": "ext_storyPointsPerLevel",
+   "unit": "int"
+  },
+  {
+   "id": "sml_bonusXP_cleanDisengage",
+   "key": "ext_bonusXP_cleanDisengage",
+   "unit": "pct"
+  },
+  {
+   "id": "sml_bonusXP_avoidCargoScan",
+   "key": "ext_bonusXP_avoidCargoScan",
+   "unit": "pct"
+  },
+  {
+   "id": "sml_bonusXP_recoverNoBonusXPDeploymentPoints",
+   "key": "ext_bonusXP_recoverNoBonusXPDeploymentPoints",
+   "unit": "int"
+  },
+  {
+   "id": "sml_environmentalDamageMult",
+   "key": "ext_environmentalDamageMult",
+   "unit": "x"
+  },
+  {
+   "id": "sml_transverseJumpDamageMult",
+   "key": "ext_transverseJumpDamageMult",
+   "unit": "x"
+  },
+  {
+   "id": "sml_cargoScanFindContrabandMult",
+   "key": "ext_cargoScanFindContrabandMult",
+   "unit": "x"
+  },
+  {
+   "id": "sml_cargoScanNumShipsMult",
+   "key": "ext_cargoScanNumShipsMult",
+   "unit": "x"
+  },
+  {
+   "id": "sml_cargoScanShipDamageMult",
+   "key": "ext_cargoScanShipDamageMult",
+   "unit": "x"
+  },
+  {
+   "id": "sml_analyzeMissionSensorStrengthAboveBaseRequired",
+   "key": "ext_analyzeMissionSensorStrengthAboveBaseRequired",
+   "unit": "int"
+  },
+  {
+   "id": "sml_ZGRTurnInValueMult",
+   "key": "ext_ZGRTurnInValueMult",
+   "unit": "pct"
+  },
+  {
+   "id": "sml_deliveryMissionHighQuantityChanceMult",
+   "key": "ext_deliveryMissionHighQuantityChanceMult",
+   "unit": "pct"
+  },
+  {
+   "id": "sml_retirementMinCycles",
+   "key": "ext_retirementMinCycles",
+   "unit": "int"
+  },
+  {
+   "id": "sml_retirementMaxCycles",
+   "key": "ext_retirementMaxCycles",
+   "unit": "int"
+  },
+  {
+   "id": "sml_retirementDelayCostBase",
+   "key": "ext_retirementDelayCostBase",
+   "unit": "int"
+  },
+  {
+   "id": "sml_retirementDelayCostPerMonth",
+   "key": "ext_retirementDelayCostPerMonth",
+   "unit": "int"
+  },
+  {
+   "id": "sml_retirementDelayCostMax",
+   "key": "ext_retirementDelayCostMax",
+   "unit": "int"
+  },
+  {
+   "id": "sml_spacerSharePerMonth",
+   "key": "ext_spacerSharePerMonth",
+   "unit": "pct"
+  },
+  {
+   "id": "sml_extraSpacerDebtPerLevel",
+   "key": "ext_extraSpacerDebtPerLevel",
+   "unit": "int"
+  },
+  {
+   "id": "sml_timeBasedThingsDelayFactor",
+   "key": "ext_timeBasedThingsDelayFactor",
+   "unit": "x"
+  },
+  {
+   "id": "sml_partsForSaleFraction",
+   "key": "ext_partsForSaleFraction",
+   "unit": "x"
+  },
+  {
+   "id": "sml_barCustomProductionMaxValueMult",
+   "key": "ext_barCustomProductionMaxValueMult",
+   "unit": "x"
+  },
+  {
+   "id": "sml_playerIndustryCustomProductionMaxValueMult",
+   "key": "ext_playerIndustryCustomProductionMaxValueMult",
+   "unit": "x"
+  },
+  {
+   "id": "sml_shipStoragePriceMult",
+   "key": "ext_shipStoragePriceMult",
+   "unit": "pct"
+  },
+  {
+   "id": "sml_shipSellValueIncreasePerPartUsed",
+   "key": "ext_shipSellValueIncreasePerPartUsed",
+   "unit": "int"
+  },
+  {
+   "id": "sml_shipSellValueMultPerSMod",
+   "key": "ext_shipSellValueMultPerSMod",
+   "unit": "pct"
+  },
+  {
+   "id": "sml_crewForSaleMilitaryMult",
+   "key": "ext_crewForSaleMilitaryMult",
+   "unit": "x"
+  },
+  {
+   "id": "sml_marinesForSaleMilitaryMult",
+   "key": "ext_marinesForSaleMilitaryMult",
+   "unit": "x"
+  },
+  {
+   "id": "sml_suppliesForSaleMilitaryMult",
+   "key": "ext_suppliesForSaleMilitaryMult",
+   "unit": "x"
+  },
+  {
+   "id": "sml_fuelForSaleMilitaryMult",
+   "key": "ext_fuelForSaleMilitaryMult",
+   "unit": "x"
+  },
+  {
+   "id": "sml_personnelForSaleMinMultBadRep",
+   "key": "ext_personnelForSaleMinMultBadRep",
+   "unit": "pct"
+  },
+  {
+   "id": "sml_personnelForSaleMaxMultGoodRep",
+   "key": "ext_personnelForSaleMaxMultGoodRep",
+   "unit": "pct"
+  },
+  {
+   "id": "sml_weaponAndFighterSellPriceMult",
+   "key": "ext_weaponAndFighterSellPriceMult",
+   "unit": "x"
+  },
+  {
+   "id": "sml_hullmodSellPriceMult",
+   "key": "ext_hullmodSellPriceMult",
+   "unit": "pct"
+  },
+  {
+   "id": "sml_shipBuyPriceMultPerDMod",
+   "key": "ext_shipBuyPriceMultPerDMod",
+   "unit": "pct"
+  },
+  {
+   "id": "sml_militaryMarketRequiresCommission",
+   "key": "ext_militaryMarketRequiresCommission",
+   "unit": "bool"
+  },
+  {
+   "id": "sml_removeGalatiaStipend",
+   "key": "ext_removeGalatiaStipend",
+   "unit": "bool"
+  },
+  {
+   "id": "sml_reduceLegionXIVSpawns",
+   "key": "ext_reduceLegionXIVSpawns",
+   "unit": "bool"
+  },
+  {
+   "id": "sml_reduceDerelictQuality",
+   "key": "ext_reduceDerelictQuality",
+   "unit": "bool"
+  },
+  {
+   "id": "sml_strongerAlphaSiteDefenders",
+   "key": "ext_strongerAlphaSiteDefenders",
+   "unit": "bool"
+  },
+  {
+   "id": "sml_moreDangerousMkIThreat",
+   "key": "ext_moreDangerousMkIThreat",
+   "unit": "bool"
+  },
+  {
+   "id": "sml_worseHandMeDownFreighter",
+   "key": "ext_worseHandMeDownFreighter",
+   "unit": "bool"
+  },
+  {
+   "id": "sml_analyzeMissionRequiresSensorStrength",
+   "key": "ext_analyzeMissionRequiresSensorStrength",
+   "unit": "bool"
+  }
+ ]
+}

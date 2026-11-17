@@ -6,3 +6,7 @@
 
 .claude/
 __pycache__/
+
+# Built by build.py
+/build/
+/jars/

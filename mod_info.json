@@ -4,7 +4,10 @@
   "author": "Oddisz",
   "utility": "true",
   "version": "1.0.0",
-  "description": "Survival mode with half the penalties. Every survival number (prices, loot, fuel, salaries, colony costs and more) sits halfway between normal and survival. Only campaigns started in Survival mode change.",
+  "modThreadId": "36456",
+  "description": "In between vanilla and survival mode - fully customizable! Every survival number (prices, loot, fuel, salaries, colony costs and more) starts halfway between vanilla and survival. With LunaLib each one can be changed. Only campaigns started in Survival mode change.",
   "gameVersion": "0.98.5a-RC4",
+  "jars": ["jars/SurvivalModeLite.jar"],
+  "modPlugin": "survivalmodelite.SurvivalModeLitePlugin",
   "updateCheckURL": "https://raw.githubusercontent.com/andrzejsokolowski/starsector-survival-mode-lite/main/survival_mode_lite.version"
 }

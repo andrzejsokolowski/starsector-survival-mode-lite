@@ -1,3 +1,4 @@
 Version 1.0.0 (2026-11-17)
-- First release. Survival mode with half the penalties: every survival number (prices, items for sale, loot, fuel, salaries, colony costs, officers for hire, story points, retirement and more) sits halfway between normal and survival.
+- First release. Survival mode with every penalty halfway between vanilla and survival: prices, items for sale, loot, fuel, salaries, colony costs, officers for hire, story points, retirement and more.
+- Optional LunaLib settings for every survival number, with its survival and vanilla value shown.
 - Only campaigns started in Survival mode change.
