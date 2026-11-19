@@ -15,7 +15,7 @@
 	"ext_personnelSellPriceMult":0.18,	# Crew and marines sold back: 10% / 100%
 	"ext_normalTariff":0.35,	# Open market tariff: 40% / 30%
 	"ext_blackMarketTariff":0.125,	# Black market tariff: 25% / 0%
-	"ext_worseHandMeDownFreighterPriceMult":1.5,	# Hand-me-down freighter mission: extra price: x2 / x1
+	"ext_worseHandMeDownFreighterPriceMult":1.125,	# Hand-me-down freighter mission: extra price: x1.25 / x1
 	"ext_hijackedShipCostMult":1.5,	# Hijacked ship mission: extra price: x2 / x1
 	"ext_surplusHullPriceMult":1.5,	# Surplus hull mission: extra price: x2 / x1
 	"ext_taskForceCostMult":1.5,	# Task force cost: x2 / x1
@@ -62,6 +62,7 @@
 	"ext_substrateDropFraction":0.7,	# Dweller substrate dropped: 40% / 100%
 	"ext_partsSpecialSalvageDropFraction":0.75,	# Domain-grade parts from special salvage: 50% / 100%
 	"ext_partsPerUnitOfSupplies":0.0375,	# Domain-grade parts per 100 supplies salvaged: 2.5 / 5
+	"ext_partsFractionReturnedFromScuttling":0.625,	# Domain-grade parts back when you scuttle a ship: 50% / 75%
 	"ext_fuelCapacityMult":0.75,	# Fuel tank size: 50% / 100%
 	"ext_fuelCapacityMultTanker":0.675,	# Tanker fuel tank size: 35% / 100%
 	"ext_colonyGrowthRequiredMult":1.5,	# Colony growth needed: x2 / x1
@@ -82,7 +83,7 @@
 	"ext_bonusXP_avoidCargoScan":0.75,	# Bonus XP for avoiding a cargo scan: 50% / 100%
 	"ext_bonusXP_recoverNoBonusXPDeploymentPoints":17,	# Recovering a ship gives no bonus XP from (DP): 5 / 30
 	"ext_environmentalDamageMult":1.5,	# Hyperstorm and asteroid damage: x2 / x1
-	"ext_transverseJumpDamageMult":5.5,	# Transverse Jump CR loss: x10 / x1
+	"ext_transverseJumpDamageMult":3,	# Transverse Jump CR loss: x5 / x1
 	"ext_cargoScanFindContrabandMult":1.5,	# Cargo scan: chance to find contraband: x2 / x1
 	"ext_cargoScanNumShipsMult":2.5,	# Cargo scan: penalty spread over ships: x4 / x1
 	"ext_cargoScanShipDamageMult":1.5,	# Cargo scan: CR lost: x2 / x1
@@ -97,7 +98,7 @@
 	"ext_spacerSharePerMonth":0.05,	# Spacer start: monthly share of credits above 12 months of pay: 10% / none
 	"ext_extraSpacerDebtPerLevel":1000,	# Spacer start: extra debt per level: 2,000 / 0
 	"ext_shipBuyPriceMult":["core_clearArray", 3, 3, 3.5, 4.5],	# survival [5, 5, 6, 8]
-	"ext_officerCombatPay":["core_clearArray", 0.5, 1, 2, 8],	# survival [1, 2, 4, 16]
+	"ext_officerCombatPay":["core_clearArray", 0.25, 0.5, 1, 4],	# survival [0.5, 1, 2, 8]
 	"ext_recoveryNonOwnSPCost":["core_clearArray", 1, 1, 1, 2],	# survival [1, 1, 2, 4]
 	"ext_recoveryNonOwnSPCostCiv":["core_clearArray", 1, 1, 1, 1],	# survival [1, 1, 1, 2]
 	"ext_fuelUseMult":["core_clearArray", 1, 1, 1.25, 1.5],	# survival [1, 1, 1.5, 2]

@@ -16,7 +16,7 @@ sml_fuelPriceMult,Fuel price,Double,2,,Survival: x3. Vanilla: x1.,0,10,Prices
 sml_personnelSellPriceMult,Crew and marines sold back,Double,18,,Survival: 10%. Vanilla: 100%. Share of the raised price you get back. 100% divided by the crew price keeps buying and selling even.,0,200,Prices
 sml_normalTariff,Open market tariff,Double,35,,Survival: 40%. Vanilla: 30%.,0,100,Prices
 sml_blackMarketTariff,Black market tariff,Double,12.5,,Survival: 25%. Vanilla: 0%.,0,100,Prices
-sml_worseHandMeDownFreighterPriceMult,Hand-me-down freighter mission: extra price,Double,1.5,,Survival: x2. Vanilla: x1.,0,10,Prices
+sml_worseHandMeDownFreighterPriceMult,Hand-me-down freighter mission: extra price,Double,1.125,,Survival: x1.25. Vanilla: x1.,0,10,Prices
 sml_hijackedShipCostMult,Hijacked ship mission: extra price,Double,1.5,,Survival: x2. Vanilla: x1.,0,10,Prices
 sml_surplusHullPriceMult,Surplus hull mission: extra price,Double,1.5,,Survival: x2. Vanilla: x1.,0,10,Prices
 sml_taskForceCostMult,Task force cost,Double,1.5,,Survival: x2. Vanilla: x1.,0,10,Prices
@@ -25,10 +25,10 @@ sml_resupplyCrewBroughtMult,Crew a resupply fleet brings,Double,62.5,,Survival: 
 sml_header_pay,Pay Header,Header,Pay,,,,,Pay
 sml_crewSalaryMult,Crew salary,Double,2,,Survival: x3. Vanilla: x1.,0,10,Pay
 sml_marineSalaryMult,Marine salary,Double,2,,Survival: x3. Vanilla: x1.,0,10,Pay
-sml_officerCombatPay_0,"Officer pay per battle, frigate (months of salary)",Double,0.5,,Survival: 1. Vanilla: none.,0,3,Pay
-sml_officerCombatPay_1,"Officer pay per battle, destroyer (months of salary)",Double,1,,Survival: 2. Vanilla: none.,0,6,Pay
-sml_officerCombatPay_2,"Officer pay per battle, cruiser (months of salary)",Double,2,,Survival: 4. Vanilla: none.,0,12,Pay
-sml_officerCombatPay_3,"Officer pay per battle, capital (months of salary)",Double,8,,Survival: 16. Vanilla: none.,0,48,Pay
+sml_officerCombatPay_0,"Officer pay per battle, frigate (months of salary)",Double,0.25,,Survival: 0.5. Vanilla: none.,0,1.5,Pay
+sml_officerCombatPay_1,"Officer pay per battle, destroyer (months of salary)",Double,0.5,,Survival: 1. Vanilla: none.,0,3,Pay
+sml_officerCombatPay_2,"Officer pay per battle, cruiser (months of salary)",Double,1,,Survival: 2. Vanilla: none.,0,6,Pay
+sml_officerCombatPay_3,"Officer pay per battle, capital (months of salary)",Double,4,,Survival: 8. Vanilla: none.,0,24,Pay
 sml_commissionMonthlyIncomeMult,Commission monthly pay,Double,55,,Survival: 10%. Vanilla: 100%.,0,200,Pay
 sml_header_markets,What markets sell Header,Header,What markets sell,,,,,Markets
 sml_shipForSaleFraction,Ships for sale,Double,62.5,,Survival: 25%. Vanilla: 100%.,0,200,Markets
@@ -78,6 +78,7 @@ sml_aiCoreDropFraction,AI cores dropped,Double,55,,Survival: 10%. Vanilla: 100%.
 sml_substrateDropFraction,Dweller substrate dropped,Double,70,,Survival: 40%. Vanilla: 100%.,0,200,Loot
 sml_partsSpecialSalvageDropFraction,Domain-grade parts from special salvage,Double,75,,Survival: 50%. Vanilla: 100%.,0,200,Loot
 sml_partsPerUnitOfSupplies,Domain-grade parts per 100 supplies salvaged,Double,3.75,,Survival: 2.5. Vanilla: 5.,0,20,Loot
+sml_partsFractionReturnedFromScuttling,Domain-grade parts back when you scuttle a ship,Double,62.5,,Survival: 50%. Vanilla: 75%. Share of the parts used on the ship.,0,150,Loot
 sml_header_fuel,Fuel Header,Header,Fuel,,,,,Fuel
 sml_fuelCapacityMult,Fuel tank size,Double,75,,Survival: 50%. Vanilla: 100%.,0,200,Fuel
 sml_fuelCapacityMultTanker,Tanker fuel tank size,Double,67.5,,Survival: 35%. Vanilla: 100%.,0,200,Fuel
@@ -107,7 +108,7 @@ sml_bonusXP_avoidCargoScan,Bonus XP for avoiding a cargo scan,Double,75,,Surviva
 sml_bonusXP_recoverNoBonusXPDeploymentPoints,Recovering a ship gives no bonus XP from (DP),Int,17,,Survival: 5. Vanilla: 30.,0,120,Experience
 sml_header_hazards,Hazards and missions Header,Header,Hazards and missions,,,,,Hazards
 sml_environmentalDamageMult,Hyperstorm and asteroid damage,Double,1.5,,Survival: x2. Vanilla: x1.,0,10,Hazards
-sml_transverseJumpDamageMult,Transverse Jump CR loss,Double,5.5,,Survival: x10. Vanilla: x1.,0,25,Hazards
+sml_transverseJumpDamageMult,Transverse Jump CR loss,Double,3,,Survival: x5. Vanilla: x1.,0,12.5,Hazards
 sml_cargoScanFindContrabandMult,Cargo scan: chance to find contraband,Double,1.5,,Survival: x2. Vanilla: x1.,0,10,Hazards
 sml_cargoScanNumShipsMult,Cargo scan: penalty spread over ships,Double,2.5,,Survival: x4. Vanilla: x1.,0,10,Hazards
 sml_cargoScanShipDamageMult,Cargo scan: CR lost,Double,1.5,,Survival: x2. Vanilla: x1.,0,10,Hazards
@@ -129,7 +130,9 @@ sml_barCustomProductionMaxValueMult,Custom production order size (bar contacts),
 sml_playerIndustryCustomProductionMaxValueMult,Custom production order size (your industry),Double,3,,Survival: x3. Vanilla: x1.,0,10,Survival help
 sml_shipStoragePriceMult,Ship storage fee,Double,50,,Survival: 50%. Vanilla: 100%.,0,200,Survival help
 sml_shipSellValueIncreasePerPartUsed,Ship sell value per Domain-grade part used on d-mods,Int,5000,,"Survival: 5,000. Vanilla: 0.",0,20000,Survival help
-sml_shipSellValueMultPerSMod,Ship sell value per S-mod,Double,100,,Survival: 100%. Vanilla: 0%.,0,200,Survival help
+sml_shipSellValueMultPerSMod,Ship sell value per S-mod,Double,100,,"Survival: 100%. Vanilla: 0%. Keep it the same as the buy price per S-mod, or buying and selling S-modded ships makes credits.",0,200,Survival help
+sml_shipBuyValueMultPerSMod,Ship buy price per S-mod,Double,100,,"Survival: 100%. Vanilla: 0%. Keep it the same as the sell value per S-mod, or buying and selling S-modded ships makes credits.",0,200,Survival help
+sml_threatNonResourceDropMult,Weapons and fighter LPCs dropped by Threat fleets,Double,2,,Survival: x2. Vanilla: x1. Applied on top of the weapon and fighter LPC drop settings.,0,10,Survival help
 sml_crewForSaleMilitaryMult,Crew at military markets,Double,1.5,,Survival: x1.5. Vanilla: x1.,0,10,Survival help
 sml_marinesForSaleMilitaryMult,Marines at military markets,Double,1.5,,Survival: x1.5. Vanilla: x1.,0,10,Survival help
 sml_suppliesForSaleMilitaryMult,Supplies at military markets,Double,1.2,,Survival: x1.2. Vanilla: x1.,0,10,Survival help

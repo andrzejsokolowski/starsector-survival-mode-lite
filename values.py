@@ -36,7 +36,7 @@ ROWS = [
      "Share of the raised price you get back. 100% divided by the crew price keeps buying and selling even."),
     ("Prices", "Open market tariff", "ext_normalTariff", None, "pct", 0.4, 0.35, 0.3, ""),
     ("Prices", "Black market tariff", "ext_blackMarketTariff", None, "pct", 0.25, 0.125, 0, ""),
-    ("Prices", "Hand-me-down freighter mission: extra price", "ext_worseHandMeDownFreighterPriceMult", None, "x", 2, 1.5, 1, ""),
+    ("Prices", "Hand-me-down freighter mission: extra price", "ext_worseHandMeDownFreighterPriceMult", None, "x", 1.25, 1.125, 1, ""),
     ("Prices", "Hijacked ship mission: extra price", "ext_hijackedShipCostMult", None, "x", 2, 1.5, 1, ""),
     ("Prices", "Surplus hull mission: extra price", "ext_surplusHullPriceMult", None, "x", 2, 1.5, 1, ""),
     ("Prices", "Task force cost", "ext_taskForceCostMult", None, "x", 2, 1.5, 1, ""),
@@ -46,10 +46,10 @@ ROWS = [
     # Pay
     ("Pay", "Crew salary", "ext_crewSalaryMult", None, "x", 3, 2, 1, ""),
     ("Pay", "Marine salary", "ext_marineSalaryMult", None, "x", 3, 2, 1, ""),
-    ("Pay", "Officer pay per battle, frigate (months of salary)", "ext_officerCombatPay", 0, "num", 1, 0.5, "none", ""),
-    ("Pay", "Officer pay per battle, destroyer (months of salary)", "ext_officerCombatPay", 1, "num", 2, 1, "none", ""),
-    ("Pay", "Officer pay per battle, cruiser (months of salary)", "ext_officerCombatPay", 2, "num", 4, 2, "none", ""),
-    ("Pay", "Officer pay per battle, capital (months of salary)", "ext_officerCombatPay", 3, "num", 16, 8, "none", ""),
+    ("Pay", "Officer pay per battle, frigate (months of salary)", "ext_officerCombatPay", 0, "num", 0.5, 0.25, "none", ""),
+    ("Pay", "Officer pay per battle, destroyer (months of salary)", "ext_officerCombatPay", 1, "num", 1, 0.5, "none", ""),
+    ("Pay", "Officer pay per battle, cruiser (months of salary)", "ext_officerCombatPay", 2, "num", 2, 1, "none", ""),
+    ("Pay", "Officer pay per battle, capital (months of salary)", "ext_officerCombatPay", 3, "num", 8, 4, "none", ""),
     ("Pay", "Commission monthly pay", "ext_commissionMonthlyIncomeMult", None, "pct", 0.1, 0.55, 1, ""),
 
     # Markets
@@ -102,6 +102,8 @@ ROWS = [
     ("Loot", "Dweller substrate dropped", "ext_substrateDropFraction", None, "pct", 0.4, 0.7, 1, ""),
     ("Loot", "Domain-grade parts from special salvage", "ext_partsSpecialSalvageDropFraction", None, "pct", 0.5, 0.75, 1, ""),
     ("Loot", "Domain-grade parts per 100 supplies salvaged", "ext_partsPerUnitOfSupplies", None, "per100", 0.025, 0.0375, 0.05, ""),
+    ("Loot", "Domain-grade parts back when you scuttle a ship", "ext_partsFractionReturnedFromScuttling", None, "pct", 0.5, 0.625, 0.75,
+     "Share of the parts used on the ship."),
 
     # Fuel
     ("Fuel", "Fuel tank size", "ext_fuelCapacityMult", None, "pct", 0.5, 0.75, 1, ""),
@@ -137,7 +139,7 @@ ROWS = [
 
     # Hazards and missions
     ("Hazards", "Hyperstorm and asteroid damage", "ext_environmentalDamageMult", None, "x", 2, 1.5, 1, ""),
-    ("Hazards", "Transverse Jump CR loss", "ext_transverseJumpDamageMult", None, "x", 10, 5.5, 1, ""),
+    ("Hazards", "Transverse Jump CR loss", "ext_transverseJumpDamageMult", None, "x", 5, 3, 1, ""),
     ("Hazards", "Cargo scan: chance to find contraband", "ext_cargoScanFindContrabandMult", None, "x", 2, 1.5, 1, ""),
     ("Hazards", "Cargo scan: penalty spread over ships", "ext_cargoScanNumShipsMult", None, "x", 4, 2.5, 1, ""),
     ("Hazards", "Cargo scan: CR lost", "ext_cargoScanShipDamageMult", None, "x", 2, 1.5, 1, ""),
@@ -163,7 +165,12 @@ ROWS = [
     ("Survival help", "Custom production order size (your industry)", "ext_playerIndustryCustomProductionMaxValueMult", None, "x", 3, 3, 1, ""),
     ("Survival help", "Ship storage fee", "ext_shipStoragePriceMult", None, "pct", 0.5, 0.5, 1, ""),
     ("Survival help", "Ship sell value per Domain-grade part used on d-mods", "ext_shipSellValueIncreasePerPartUsed", None, "int", 5000, 5000, 0, ""),
-    ("Survival help", "Ship sell value per S-mod", "ext_shipSellValueMultPerSMod", None, "pct", 1, 1, 0, ""),
+    ("Survival help", "Ship sell value per S-mod", "ext_shipSellValueMultPerSMod", None, "pct", 1, 1, 0,
+     "Keep it the same as the buy price per S-mod, or buying and selling S-modded ships makes credits."),
+    ("Survival help", "Ship buy price per S-mod", "ext_shipBuyValueMultPerSMod", None, "pct", 1, 1, 0,
+     "Keep it the same as the sell value per S-mod, or buying and selling S-modded ships makes credits."),
+    ("Survival help", "Weapons and fighter LPCs dropped by Threat fleets", "ext_threatNonResourceDropMult", None, "x", 2, 2, 1,
+     "Applied on top of the weapon and fighter LPC drop settings."),
     ("Survival help", "Crew at military markets", "ext_crewForSaleMilitaryMult", None, "x", 1.5, 1.5, 1, ""),
     ("Survival help", "Marines at military markets", "ext_marinesForSaleMilitaryMult", None, "x", 1.5, 1.5, 1, ""),
     ("Survival help", "Supplies at military markets", "ext_suppliesForSaleMilitaryMult", None, "x", 1.2, 1.2, 1, ""),

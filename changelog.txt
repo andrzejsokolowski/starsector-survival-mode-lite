@@ -1,3 +1,12 @@
+Version 1.1.1 (2026-11-19)
+- Follows the survival changes in Starsector 0.98.5a-RC8. Lite stays halfway between vanilla and the new survival values.
+- Officer pay per battle: 0.25 / 0.5 / 1 / 4 months of salary (was 0.5 / 1 / 2 / 8).
+- Transverse Jump CR loss: x3 (was x5.5).
+- Hand-me-down freighter extra price: x1.125 (was x1.5).
+- New setting: Domain-grade parts back when you scuttle a ship, 62.5% (survival 50%, vanilla 75%).
+- New settings kept at the survival value: Threat fleets drop twice the weapons and fighter LPCs, and the ship buy price per S-mod matches the sell value per S-mod.
+- If you saved this mod's LunaLib settings before, the changed values keep your saved numbers. Change them in LunaLib to use the new ones.
+
 Version 1.0.0 (2026-11-17)
 - First release. Survival mode with every penalty halfway between vanilla and survival: prices, items for sale, loot, fuel, salaries, colony costs, officers for hire, story points, retirement and more.
 - Optional LunaLib settings for every survival number, with its survival and vanilla value shown.

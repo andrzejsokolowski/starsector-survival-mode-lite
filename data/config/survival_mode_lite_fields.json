@@ -387,6 +387,11 @@
    "unit": "per100"
   },
   {
+   "id": "sml_partsFractionReturnedFromScuttling",
+   "key": "ext_partsFractionReturnedFromScuttling",
+   "unit": "pct"
+  },
+  {
    "id": "sml_fuelCapacityMult",
    "key": "ext_fuelCapacityMult",
    "unit": "pct"
@@ -614,6 +619,16 @@
    "id": "sml_shipSellValueMultPerSMod",
    "key": "ext_shipSellValueMultPerSMod",
    "unit": "pct"
+  },
+  {
+   "id": "sml_shipBuyValueMultPerSMod",
+   "key": "ext_shipBuyValueMultPerSMod",
+   "unit": "pct"
+  },
+  {
+   "id": "sml_threatNonResourceDropMult",
+   "key": "ext_threatNonResourceDropMult",
+   "unit": "x"
   },
   {
    "id": "sml_crewForSaleMilitaryMult",

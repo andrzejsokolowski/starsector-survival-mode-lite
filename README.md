@@ -32,7 +32,7 @@ Vanilla is the base game without Survival mode. Lite is the default of this mod.
 | Crew and marines sold back | 10% | 18% | 100% |
 | Open market tariff | 40% | 35% | 30% |
 | Black market tariff | 25% | 12.5% | 0% |
-| Hand-me-down freighter mission: extra price | x2 | x1.5 | x1 |
+| Hand-me-down freighter mission: extra price | x1.25 | x1.125 | x1 |
 | Hijacked ship mission: extra price | x2 | x1.5 | x1 |
 | Surplus hull mission: extra price | x2 | x1.5 | x1 |
 | Task force cost | x2 | x1.5 | x1 |
@@ -45,10 +45,10 @@ Vanilla is the base game without Survival mode. Lite is the default of this mod.
 | --- | --- | --- | --- |
 | Crew salary | x3 | x2 | x1 |
 | Marine salary | x3 | x2 | x1 |
-| Officer pay per battle, frigate (months of salary) | 1 | 0.5 | none |
-| Officer pay per battle, destroyer (months of salary) | 2 | 1 | none |
-| Officer pay per battle, cruiser (months of salary) | 4 | 2 | none |
-| Officer pay per battle, capital (months of salary) | 16 | 8 | none |
+| Officer pay per battle, frigate (months of salary) | 0.5 | 0.25 | none |
+| Officer pay per battle, destroyer (months of salary) | 1 | 0.5 | none |
+| Officer pay per battle, cruiser (months of salary) | 2 | 1 | none |
+| Officer pay per battle, capital (months of salary) | 8 | 4 | none |
 | Commission monthly pay | 10% | 55% | 100% |
 
 ### What markets sell
@@ -106,6 +106,7 @@ Vanilla is the base game without Survival mode. Lite is the default of this mod.
 | Dweller substrate dropped | 40% | 70% | 100% |
 | Domain-grade parts from special salvage | 50% | 75% | 100% |
 | Domain-grade parts per 100 supplies salvaged | 2.5 | 3.75 | 5 |
+| Domain-grade parts back when you scuttle a ship | 50% | 62.5% | 75% |
 
 ### Fuel
 
@@ -155,7 +156,7 @@ Vanilla is the base game without Survival mode. Lite is the default of this mod.
 | Thing changed from base game | Survival | Lite | Vanilla |
 | --- | --- | --- | --- |
 | Hyperstorm and asteroid damage | x2 | x1.5 | x1 |
-| Transverse Jump CR loss | x10 | x5.5 | x1 |
+| Transverse Jump CR loss | x5 | x3 | x1 |
 | Cargo scan: chance to find contraband | x2 | x1.5 | x1 |
 | Cargo scan: penalty spread over ships | x4 | x2.5 | x1 |
 | Cargo scan: CR lost | x2 | x1.5 | x1 |
@@ -186,6 +187,8 @@ Vanilla is the base game without Survival mode. Lite is the default of this mod.
 | Ship storage fee | 50% | 50% | 100% |
 | Ship sell value per Domain-grade part used on d-mods | 5,000 | 5,000 | 0 |
 | Ship sell value per S-mod | 100% | 100% | 0% |
+| Ship buy price per S-mod | 100% | 100% | 0% |
+| Weapons and fighter LPCs dropped by Threat fleets | x2 | x2 | x1 |
 | Crew at military markets | x1.5 | x1.5 | x1 |
 | Marines at military markets | x1.5 | x1.5 | x1 |
 | Supplies at military markets | x1.2 | x1.2 | x1 |
