@@ -1,3 +1,8 @@
+Version 1.2.1 (2026-11-19)
+- Fixed a crash when opening this mod's LunaLib settings, caused by the % signs in the setting descriptions. They now say "percent".
+- The retirement cycle and base delay cost settings now say that they only matter in a new game: the retirement date is picked when the sector is made. Turning retirement off still works at once.
+- Hand-me-down freighter extra price default is now x1.13, because LunaLib's slider keeps two decimals.
+
 Version 1.2.0 (2026-11-19)
 - New: an on/off switch in LunaLib for every survival change, above its numbers. Off uses the vanilla value, for example no officer pay per battle, no corruption or no retirement.
 - A changed sensor strength requirement for Analyze missions now applies at once, without a restart.

@@ -32,7 +32,7 @@ Vanilla is the base game without Survival mode. Lite is the default of this mod.
 | Crew and marines sold back | 10% | 18% | 100% |
 | Open market tariff | 40% | 35% | 30% |
 | Black market tariff | 25% | 12.5% | 0% |
-| Hand-me-down freighter mission: extra price | x1.25 | x1.125 | x1 |
+| Hand-me-down freighter mission: extra price | x1.25 | x1.13 | x1 |
 | Hijacked ship mission: extra price | x2 | x1.5 | x1 |
 | Surplus hull mission: extra price | x2 | x1.5 | x1 |
 | Task force cost | x2 | x1.5 | x1 |

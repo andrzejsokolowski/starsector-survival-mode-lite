@@ -15,7 +15,7 @@
 	"ext_personnelSellPriceMult":0.18,	# Crew and marines sold back: 10% / 100%
 	"ext_normalTariff":0.35,	# Open market tariff: 40% / 30%
 	"ext_blackMarketTariff":0.125,	# Black market tariff: 25% / 0%
-	"ext_worseHandMeDownFreighterPriceMult":1.125,	# Hand-me-down freighter mission: extra price: x1.25 / x1
+	"ext_worseHandMeDownFreighterPriceMult":1.13,	# Hand-me-down freighter mission: extra price: x1.25 / x1
 	"ext_hijackedShipCostMult":1.5,	# Hijacked ship mission: extra price: x2 / x1
 	"ext_surplusHullPriceMult":1.5,	# Surplus hull mission: extra price: x2 / x1
 	"ext_taskForceCostMult":1.5,	# Task force cost: x2 / x1

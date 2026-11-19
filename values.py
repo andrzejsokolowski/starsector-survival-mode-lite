@@ -36,7 +36,7 @@ ROWS = [
      "Share of the raised price you get back. 100% divided by the crew price keeps buying and selling even."),
     ("Prices", "Open market tariff", "ext_normalTariff", None, "pct", 0.4, 0.35, 0.3, ""),
     ("Prices", "Black market tariff", "ext_blackMarketTariff", None, "pct", 0.25, 0.125, 0, ""),
-    ("Prices", "Hand-me-down freighter mission: extra price", "ext_worseHandMeDownFreighterPriceMult", None, "x", 1.25, 1.125, 1, ""),
+    ("Prices", "Hand-me-down freighter mission: extra price", "ext_worseHandMeDownFreighterPriceMult", None, "x", 1.25, 1.13, 1, ""),
     ("Prices", "Hijacked ship mission: extra price", "ext_hijackedShipCostMult", None, "x", 2, 1.5, 1, ""),
     ("Prices", "Surplus hull mission: extra price", "ext_surplusHullPriceMult", None, "x", 2, 1.5, 1, ""),
     ("Prices", "Task force cost", "ext_taskForceCostMult", None, "x", 2, 1.5, 1, ""),
@@ -149,9 +149,12 @@ ROWS = [
 
     # Retirement and the spacer start
     ("Retirement", "Retirement, earliest cycle", "ext_retirementMinCycles", None, "int", 25, 40, "never",
-     "0 turns retirement off. Keep it at or below the latest cycle."),
-    ("Retirement", "Retirement, latest cycle", "ext_retirementMaxCycles", None, "int", 30, 50, "never", ""),
-    ("Retirement", "Cost to delay retirement, base", "ext_retirementDelayCostBase", None, "int", 20000, 10000, "none", ""),
+     "The retirement date is picked when a new sector is made, so other values only matter in a new game. "
+     "0 turns retirement off at once. Keep it at or below the latest cycle."),
+    ("Retirement", "Retirement, latest cycle", "ext_retirementMaxCycles", None, "int", 30, 50, "never",
+     "The retirement date is picked when a new sector is made, so this only matters in a new game."),
+    ("Retirement", "Cost to delay retirement, base", "ext_retirementDelayCostBase", None, "int", 20000, 10000, "none",
+     "Set when a new sector is made, so this only matters in a new game."),
     ("Retirement", "Cost to delay retirement, per month", "ext_retirementDelayCostPerMonth", None, "int", 1000, 500, "none", ""),
     ("Retirement", "Cost to delay retirement, at most", "ext_retirementDelayCostMax", None, "int", 50000, 25000, "none", ""),
     ("Retirement", "Spacer start: monthly share of credits above 12 months of pay", "ext_spacerSharePerMonth", None, "pct", 0.1, 0.05, "none", ""),

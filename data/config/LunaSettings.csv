@@ -12,8 +12,8 @@ sml_on_fighterPriceMult,Survival change: Fighter LPC prices,Boolean,true,,"On: t
 sml_fighterPriceMult,Fighter LPC prices,Double,3,,Survival: x5. Vanilla: x1.,0,12.5,Prices
 sml_on_hullmodPriceMult,Survival change: Hull mod spec prices,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (x1).",,,Prices
 sml_hullmodPriceMult,Hull mod spec prices,Double,4,,Survival: x7. Vanilla: x1.,0,17.5,Prices
-sml_on_blueprintSellPriceMult,Survival change: Blueprint sell price,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (100%).",,,Prices
-sml_blueprintSellPriceMult,Blueprint sell price,Double,65,,Survival: 30%. Vanilla: 100%.,0,200,Prices
+sml_on_blueprintSellPriceMult,Survival change: Blueprint sell price,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (100 percent).",,,Prices
+sml_blueprintSellPriceMult,Blueprint sell price,Double,65,,Survival: 30 percent. Vanilla: 100 percent.,0,200,Prices
 sml_on_partsPriceMult,Survival change: Domain-grade parts price,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (x1).",,,Prices
 sml_partsPriceMult,Domain-grade parts price,Double,1.5,,Survival: x2. Vanilla: x1.,0,10,Prices
 sml_on_crewPriceMult,Survival change: Crew price,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (x1).",,,Prices
@@ -22,14 +22,14 @@ sml_on_marinesPriceMult,Survival change: Marine price,Boolean,true,,"On: the sur
 sml_marinesPriceMult,Marine price,Double,2.5,,Survival: x4. Vanilla: x1.,0,10,Prices
 sml_on_fuelPriceMult,Survival change: Fuel price,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (x1).",,,Prices
 sml_fuelPriceMult,Fuel price,Double,2,,Survival: x3. Vanilla: x1.,0,10,Prices
-sml_on_personnelSellPriceMult,Survival change: Crew and marines sold back,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (100%).",,,Prices
-sml_personnelSellPriceMult,Crew and marines sold back,Double,18,,Survival: 10%. Vanilla: 100%. Share of the raised price you get back. 100% divided by the crew price keeps buying and selling even.,0,200,Prices
-sml_on_normalTariff,Survival change: Open market tariff,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (30%).",,,Prices
-sml_normalTariff,Open market tariff,Double,35,,Survival: 40%. Vanilla: 30%.,0,100,Prices
-sml_on_blackMarketTariff,Survival change: Black market tariff,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (0%).",,,Prices
-sml_blackMarketTariff,Black market tariff,Double,12.5,,Survival: 25%. Vanilla: 0%.,0,100,Prices
+sml_on_personnelSellPriceMult,Survival change: Crew and marines sold back,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (100 percent).",,,Prices
+sml_personnelSellPriceMult,Crew and marines sold back,Double,18,,Survival: 10 percent. Vanilla: 100 percent. Share of the raised price you get back. 100 percent divided by the crew price keeps buying and selling even.,0,200,Prices
+sml_on_normalTariff,Survival change: Open market tariff,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (30 percent).",,,Prices
+sml_normalTariff,Open market tariff,Double,35,,Survival: 40 percent. Vanilla: 30 percent.,0,100,Prices
+sml_on_blackMarketTariff,Survival change: Black market tariff,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (0 percent).",,,Prices
+sml_blackMarketTariff,Black market tariff,Double,12.5,,Survival: 25 percent. Vanilla: 0 percent.,0,100,Prices
 sml_on_worseHandMeDownFreighterPriceMult,Survival change: Hand-me-down freighter mission: extra price,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (x1).",,,Prices
-sml_worseHandMeDownFreighterPriceMult,Hand-me-down freighter mission: extra price,Double,1.125,,Survival: x1.25. Vanilla: x1.,0,10,Prices
+sml_worseHandMeDownFreighterPriceMult,Hand-me-down freighter mission: extra price,Double,1.13,,Survival: x1.25. Vanilla: x1.,0,10,Prices
 sml_on_hijackedShipCostMult,Survival change: Hijacked ship mission: extra price,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (x1).",,,Prices
 sml_hijackedShipCostMult,Hijacked ship mission: extra price,Double,1.5,,Survival: x2. Vanilla: x1.,0,10,Prices
 sml_on_surplusHullPriceMult,Survival change: Surplus hull mission: extra price,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (x1).",,,Prices
@@ -38,8 +38,8 @@ sml_on_taskForceCostMult,Survival change: Task force cost,Boolean,true,,"On: the
 sml_taskForceCostMult,Task force cost,Double,1.5,,Survival: x2. Vanilla: x1.,0,10,Prices
 sml_on_resupplyFleetCostMult,Survival change: Resupply fleet cost,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (x1).",,,Prices
 sml_resupplyFleetCostMult,Resupply fleet cost,Double,1.25,,Survival: x1.5. Vanilla: x1.,0,10,Prices
-sml_on_resupplyCrewBroughtMult,Survival change: Crew a resupply fleet brings,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (100%).",,,Prices
-sml_resupplyCrewBroughtMult,Crew a resupply fleet brings,Double,62.5,,Survival: 25%. Vanilla: 100%.,0,200,Prices
+sml_on_resupplyCrewBroughtMult,Survival change: Crew a resupply fleet brings,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (100 percent).",,,Prices
+sml_resupplyCrewBroughtMult,Crew a resupply fleet brings,Double,62.5,,Survival: 25 percent. Vanilla: 100 percent.,0,200,Prices
 sml_header_pay,Pay Header,Header,Pay,,,,,Pay
 sml_on_crewSalaryMult,Survival change: Crew salary,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (x1).",,,Pay
 sml_crewSalaryMult,Crew salary,Double,2,,Survival: x3. Vanilla: x1.,0,10,Pay
@@ -50,56 +50,56 @@ sml_officerCombatPay_0,"Officer pay per battle, frigate (months of salary)",Doub
 sml_officerCombatPay_1,"Officer pay per battle, destroyer (months of salary)",Double,0.5,,Survival: 1. Vanilla: none.,0,3,Pay
 sml_officerCombatPay_2,"Officer pay per battle, cruiser (months of salary)",Double,1,,Survival: 2. Vanilla: none.,0,6,Pay
 sml_officerCombatPay_3,"Officer pay per battle, capital (months of salary)",Double,4,,Survival: 8. Vanilla: none.,0,24,Pay
-sml_on_commissionMonthlyIncomeMult,Survival change: Commission monthly pay,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (100%).",,,Pay
-sml_commissionMonthlyIncomeMult,Commission monthly pay,Double,55,,Survival: 10%. Vanilla: 100%.,0,200,Pay
+sml_on_commissionMonthlyIncomeMult,Survival change: Commission monthly pay,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (100 percent).",,,Pay
+sml_commissionMonthlyIncomeMult,Commission monthly pay,Double,55,,Survival: 10 percent. Vanilla: 100 percent.,0,200,Pay
 sml_header_markets,What markets sell Header,Header,What markets sell,,,,,Markets
-sml_on_shipForSaleFraction,Survival change: Ships for sale,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (100%).",,,Markets
-sml_shipForSaleFraction,Ships for sale,Double,62.5,,Survival: 25%. Vanilla: 100%.,0,200,Markets
-sml_on_shipForSaleQualityMod,Survival change: Quality of ships for sale,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (0%).",,,Markets
-sml_shipForSaleQualityMod,Quality of ships for sale,Double,-17.5,,Survival: -35%. Vanilla: 0%. Lower means more d-mods.,-100,100,Markets
-sml_on_weaponForSaleFraction,Survival change: Weapons for sale,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (100%).",,,Markets
-sml_weaponForSaleFraction,Weapons for sale,Double,60,,Survival: 20%. Vanilla: 100%.,0,200,Markets
-sml_on_fighterForSaleFraction,Survival change: Fighter LPCs for sale,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (100%).",,,Markets
-sml_fighterForSaleFraction,Fighter LPCs for sale,Double,60,,Survival: 20%. Vanilla: 100%.,0,200,Markets
-sml_on_hullmodForSaleFraction,Survival change: Hull mod specs for sale,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (100%).",,,Markets
-sml_hullmodForSaleFraction,Hull mod specs for sale,Double,67.5,,Survival: 35%. Vanilla: 100%.,0,200,Markets
-sml_on_crewForSaleFraction,Survival change: Crew for sale,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (100%).",,,Markets
-sml_crewForSaleFraction,Crew for sale,Double,60,,Survival: 20%. Vanilla: 100%.,0,200,Markets
-sml_on_marinesForSaleFraction,Survival change: Marines for sale,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (100%).",,,Markets
-sml_marinesForSaleFraction,Marines for sale,Double,60,,Survival: 20%. Vanilla: 100%.,0,200,Markets
-sml_on_suppliesForSaleFraction,Survival change: Supplies for sale,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (100%).",,,Markets
-sml_suppliesForSaleFraction,Supplies for sale,Double,70,,Survival: 40%. Vanilla: 100%.,0,200,Markets
-sml_on_fuelForSaleFraction,Survival change: Fuel for sale,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (100%).",,,Markets
-sml_fuelForSaleFraction,Fuel for sale,Double,80,,Survival: 60%. Vanilla: 100%.,0,200,Markets
-sml_on_drugsForSaleFraction,Survival change: Drugs for sale,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (100%).",,,Markets
-sml_drugsForSaleFraction,Drugs for sale,Double,65,,Survival: 30%. Vanilla: 100%.,0,200,Markets
-sml_on_organsForSaleFraction,Survival change: Organs for sale,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (100%).",,,Markets
-sml_organsForSaleFraction,Organs for sale,Double,65,,Survival: 30%. Vanilla: 100%.,0,200,Markets
-sml_on_hand_weaponsForSaleFraction,Survival change: Heavy armaments for sale,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (100%).",,,Markets
-sml_hand_weaponsForSaleFraction,Heavy armaments for sale,Double,60,,Survival: 20%. Vanilla: 100%.,0,200,Markets
-sml_on_drugsForSaleFractionFreePort,Survival change: Drugs at free ports,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (100%).",,,Markets
-sml_drugsForSaleFractionFreePort,Drugs at free ports,Double,57.5,,Survival: 15%. Vanilla: 100%.,0,200,Markets
-sml_on_organsForSaleFractionFreePort,Survival change: Organs at free ports,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (100%).",,,Markets
-sml_organsForSaleFractionFreePort,Organs at free ports,Double,57.5,,Survival: 15%. Vanilla: 100%.,0,200,Markets
-sml_on_hand_weaponsForSaleFractionFreePort,Survival change: Heavy armaments at free ports,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (100%).",,,Markets
-sml_hand_weaponsForSaleFractionFreePort,Heavy armaments at free ports,Double,55,,Survival: 10%. Vanilla: 100%.,0,200,Markets
-sml_on_crewForSaleFractionPlayerColony,Survival change: Crew at your colonies,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (100%).",,,Markets
-sml_crewForSaleFractionPlayerColony,Crew at your colonies,Double,75,,Survival: 50%. Vanilla: 100%.,0,200,Markets
-sml_on_marinesForSaleFractionPlayerColony,Survival change: Marines at your colonies,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (100%).",,,Markets
-sml_marinesForSaleFractionPlayerColony,Marines at your colonies,Double,75,,Survival: 50%. Vanilla: 100%.,0,200,Markets
-sml_on_suppliesForSaleFractionPlayerColony,Survival change: Supplies at your colonies,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (100%).",,,Markets
-sml_suppliesForSaleFractionPlayerColony,Supplies at your colonies,Double,82.5,,Survival: 65%. Vanilla: 100%.,0,200,Markets
-sml_on_fuelForSaleFractionPlayerColony,Survival change: Fuel at your colonies,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (100%).",,,Markets
-sml_fuelForSaleFractionPlayerColony,Fuel at your colonies,Double,87.5,,Survival: 75%. Vanilla: 100%.,0,200,Markets
-sml_on_localResourcesStockpileAndRateMult,Survival change: Your colonies' local resources stockpile,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (100%).",,,Markets
-sml_localResourcesStockpileAndRateMult,Your colonies' local resources stockpile,Double,65,,Survival: 30%. Vanilla: 100%.,0,200,Markets
+sml_on_shipForSaleFraction,Survival change: Ships for sale,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (100 percent).",,,Markets
+sml_shipForSaleFraction,Ships for sale,Double,62.5,,Survival: 25 percent. Vanilla: 100 percent.,0,200,Markets
+sml_on_shipForSaleQualityMod,Survival change: Quality of ships for sale,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (0 percent).",,,Markets
+sml_shipForSaleQualityMod,Quality of ships for sale,Double,-17.5,,Survival: -35 percent. Vanilla: 0 percent. Lower means more d-mods.,-100,100,Markets
+sml_on_weaponForSaleFraction,Survival change: Weapons for sale,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (100 percent).",,,Markets
+sml_weaponForSaleFraction,Weapons for sale,Double,60,,Survival: 20 percent. Vanilla: 100 percent.,0,200,Markets
+sml_on_fighterForSaleFraction,Survival change: Fighter LPCs for sale,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (100 percent).",,,Markets
+sml_fighterForSaleFraction,Fighter LPCs for sale,Double,60,,Survival: 20 percent. Vanilla: 100 percent.,0,200,Markets
+sml_on_hullmodForSaleFraction,Survival change: Hull mod specs for sale,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (100 percent).",,,Markets
+sml_hullmodForSaleFraction,Hull mod specs for sale,Double,67.5,,Survival: 35 percent. Vanilla: 100 percent.,0,200,Markets
+sml_on_crewForSaleFraction,Survival change: Crew for sale,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (100 percent).",,,Markets
+sml_crewForSaleFraction,Crew for sale,Double,60,,Survival: 20 percent. Vanilla: 100 percent.,0,200,Markets
+sml_on_marinesForSaleFraction,Survival change: Marines for sale,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (100 percent).",,,Markets
+sml_marinesForSaleFraction,Marines for sale,Double,60,,Survival: 20 percent. Vanilla: 100 percent.,0,200,Markets
+sml_on_suppliesForSaleFraction,Survival change: Supplies for sale,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (100 percent).",,,Markets
+sml_suppliesForSaleFraction,Supplies for sale,Double,70,,Survival: 40 percent. Vanilla: 100 percent.,0,200,Markets
+sml_on_fuelForSaleFraction,Survival change: Fuel for sale,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (100 percent).",,,Markets
+sml_fuelForSaleFraction,Fuel for sale,Double,80,,Survival: 60 percent. Vanilla: 100 percent.,0,200,Markets
+sml_on_drugsForSaleFraction,Survival change: Drugs for sale,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (100 percent).",,,Markets
+sml_drugsForSaleFraction,Drugs for sale,Double,65,,Survival: 30 percent. Vanilla: 100 percent.,0,200,Markets
+sml_on_organsForSaleFraction,Survival change: Organs for sale,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (100 percent).",,,Markets
+sml_organsForSaleFraction,Organs for sale,Double,65,,Survival: 30 percent. Vanilla: 100 percent.,0,200,Markets
+sml_on_hand_weaponsForSaleFraction,Survival change: Heavy armaments for sale,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (100 percent).",,,Markets
+sml_hand_weaponsForSaleFraction,Heavy armaments for sale,Double,60,,Survival: 20 percent. Vanilla: 100 percent.,0,200,Markets
+sml_on_drugsForSaleFractionFreePort,Survival change: Drugs at free ports,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (100 percent).",,,Markets
+sml_drugsForSaleFractionFreePort,Drugs at free ports,Double,57.5,,Survival: 15 percent. Vanilla: 100 percent.,0,200,Markets
+sml_on_organsForSaleFractionFreePort,Survival change: Organs at free ports,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (100 percent).",,,Markets
+sml_organsForSaleFractionFreePort,Organs at free ports,Double,57.5,,Survival: 15 percent. Vanilla: 100 percent.,0,200,Markets
+sml_on_hand_weaponsForSaleFractionFreePort,Survival change: Heavy armaments at free ports,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (100 percent).",,,Markets
+sml_hand_weaponsForSaleFractionFreePort,Heavy armaments at free ports,Double,55,,Survival: 10 percent. Vanilla: 100 percent.,0,200,Markets
+sml_on_crewForSaleFractionPlayerColony,Survival change: Crew at your colonies,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (100 percent).",,,Markets
+sml_crewForSaleFractionPlayerColony,Crew at your colonies,Double,75,,Survival: 50 percent. Vanilla: 100 percent.,0,200,Markets
+sml_on_marinesForSaleFractionPlayerColony,Survival change: Marines at your colonies,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (100 percent).",,,Markets
+sml_marinesForSaleFractionPlayerColony,Marines at your colonies,Double,75,,Survival: 50 percent. Vanilla: 100 percent.,0,200,Markets
+sml_on_suppliesForSaleFractionPlayerColony,Survival change: Supplies at your colonies,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (100 percent).",,,Markets
+sml_suppliesForSaleFractionPlayerColony,Supplies at your colonies,Double,82.5,,Survival: 65 percent. Vanilla: 100 percent.,0,200,Markets
+sml_on_fuelForSaleFractionPlayerColony,Survival change: Fuel at your colonies,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (100 percent).",,,Markets
+sml_fuelForSaleFractionPlayerColony,Fuel at your colonies,Double,87.5,,Survival: 75 percent. Vanilla: 100 percent.,0,200,Markets
+sml_on_localResourcesStockpileAndRateMult,Survival change: Your colonies' local resources stockpile,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (100 percent).",,,Markets
+sml_localResourcesStockpileAndRateMult,Your colonies' local resources stockpile,Double,65,,Survival: 30 percent. Vanilla: 100 percent.,0,200,Markets
 sml_header_loot,Loot and recovery Header,Header,Loot and recovery,,,,,Loot
-sml_on_shipRecoverableFraction,Survival change: Enemy ships recoverable after battle,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (100%).",,,Loot
-sml_shipRecoverableFraction,Enemy ships recoverable after battle,Double,60,,Survival: 20%. Vanilla: 100%.,0,200,Loot
-sml_on_derelictShipRecoverableFraction,Survival change: Derelict ships recoverable,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (100%). Only takes effect when a new sector is made.",,,Loot
-sml_derelictShipRecoverableFraction,Derelict ships recoverable,Double,55,,Survival: 10%. Vanilla: 100%. Only takes effect when a new sector is made.,0,200,Loot
-sml_on_shipRecoveryWithStoryPointsFraction,Survival change: Derelicts that offer the story point recovery,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (100%).",,,Loot
-sml_shipRecoveryWithStoryPointsFraction,Derelicts that offer the story point recovery,Double,60,,Survival: 20%. Vanilla: 100%.,0,200,Loot
+sml_on_shipRecoverableFraction,Survival change: Enemy ships recoverable after battle,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (100 percent).",,,Loot
+sml_shipRecoverableFraction,Enemy ships recoverable after battle,Double,60,,Survival: 20 percent. Vanilla: 100 percent.,0,200,Loot
+sml_on_derelictShipRecoverableFraction,Survival change: Derelict ships recoverable,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (100 percent). Only takes effect when a new sector is made.",,,Loot
+sml_derelictShipRecoverableFraction,Derelict ships recoverable,Double,55,,Survival: 10 percent. Vanilla: 100 percent. Only takes effect when a new sector is made.,0,200,Loot
+sml_on_shipRecoveryWithStoryPointsFraction,Survival change: Derelicts that offer the story point recovery,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (100 percent).",,,Loot
+sml_shipRecoveryWithStoryPointsFraction,Derelicts that offer the story point recovery,Double,60,,Survival: 20 percent. Vanilla: 100 percent.,0,200,Loot
 sml_on_recoveryNonOwnSPCost,Survival change: Story points to recover a ship,Boolean,true,,"On: the survival change, using the numbers below. Off: vanilla (1).",,,Loot
 sml_recoveryNonOwnSPCost_0,Story points to recover a frigate,Int,1,,Survival: 1. Vanilla: 1.,0,10,Loot
 sml_recoveryNonOwnSPCost_1,Story points to recover a destroyer,Int,1,,Survival: 1. Vanilla: 1.,0,10,Loot
@@ -110,43 +110,43 @@ sml_recoveryNonOwnSPCostCiv_0,Story points to recover a civilian frigate,Int,1,,
 sml_recoveryNonOwnSPCostCiv_1,Story points to recover a civilian destroyer,Int,1,,Survival: 1. Vanilla: 1.,0,10,Loot
 sml_recoveryNonOwnSPCostCiv_2,Story points to recover a civilian cruiser,Int,1,,Survival: 1. Vanilla: 1.,0,10,Loot
 sml_recoveryNonOwnSPCostCiv_3,Story points to recover a civilian capital,Int,1,,Survival: 2. Vanilla: 1.,0,10,Loot
-sml_on_weaponDropFraction,Survival change: Weapons dropped by enemies,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (100%).",,,Loot
-sml_weaponDropFraction,Weapons dropped by enemies,Double,55,,Survival: 10%. Vanilla: 100%.,0,200,Loot
-sml_on_weaponSalvageDropFraction,Survival change: Weapons from salvage,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (100%).",,,Loot
-sml_weaponSalvageDropFraction,Weapons from salvage,Double,60,,Survival: 20%. Vanilla: 100%.,0,200,Loot
-sml_on_fighterDropFraction,Survival change: Fighter LPCs dropped by enemies,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (100%).",,,Loot
-sml_fighterDropFraction,Fighter LPCs dropped by enemies,Double,60,,Survival: 20%. Vanilla: 100%.,0,200,Loot
-sml_on_fighterSalvageDropFraction,Survival change: Fighter LPCs from salvage,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (100%).",,,Loot
-sml_fighterSalvageDropFraction,Fighter LPCs from salvage,Double,65,,Survival: 30%. Vanilla: 100%.,0,200,Loot
-sml_on_hullmodDropFraction,Survival change: Hull mod specs dropped by enemies,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (100%).",,,Loot
-sml_hullmodDropFraction,Hull mod specs dropped by enemies,Double,62.5,,Survival: 25%. Vanilla: 100%.,0,200,Loot
-sml_on_hullmodSalvageDropFraction,Survival change: Hull mod specs from salvage,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (100%).",,,Loot
-sml_hullmodSalvageDropFraction,Hull mod specs from salvage,Double,75,,Survival: 50%. Vanilla: 100%.,0,200,Loot
-sml_on_specialItemSalvageDropFraction,Survival change: Special items from salvage,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (100%).",,,Loot
-sml_specialItemSalvageDropFraction,Special items from salvage,Double,75,,Survival: 50%. Vanilla: 100%.,0,200,Loot
-sml_on_commoditySalvageDropFraction,Survival change: Commodities from salvage,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (100%).",,,Loot
-sml_commoditySalvageDropFraction,Commodities from salvage,Double,65,,Survival: 30%. Vanilla: 100%.,0,200,Loot
-sml_on_sleeperPodsSpecialCrewFraction,Survival change: Crew from sleeper pods,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (100%).",,,Loot
-sml_sleeperPodsSpecialCrewFraction,Crew from sleeper pods,Double,65,,Survival: 30%. Vanilla: 100%.,0,200,Loot
-sml_on_salvageCargoFractionPostCombat,Survival change: Cargo salvaged after battle,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (75%).",,,Loot
-sml_salvageCargoFractionPostCombat,Cargo salvaged after battle,Double,57.5,,Survival: 40%. Vanilla: 75%.,0,150,Loot
-sml_on_threatResourceSalvageMult,Survival change: Resources from Threat fleets,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (100%).",,,Loot
-sml_threatResourceSalvageMult,Resources from Threat fleets,Double,62.5,,Survival: 25%. Vanilla: 100%.,0,200,Loot
-sml_on_aiCoreDropFraction,Survival change: AI cores dropped,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (100%).",,,Loot
-sml_aiCoreDropFraction,AI cores dropped,Double,55,,Survival: 10%. Vanilla: 100%.,0,200,Loot
-sml_on_substrateDropFraction,Survival change: Dweller substrate dropped,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (100%).",,,Loot
-sml_substrateDropFraction,Dweller substrate dropped,Double,70,,Survival: 40%. Vanilla: 100%.,0,200,Loot
-sml_on_partsSpecialSalvageDropFraction,Survival change: Domain-grade parts from special salvage,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (100%).",,,Loot
-sml_partsSpecialSalvageDropFraction,Domain-grade parts from special salvage,Double,75,,Survival: 50%. Vanilla: 100%.,0,200,Loot
+sml_on_weaponDropFraction,Survival change: Weapons dropped by enemies,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (100 percent).",,,Loot
+sml_weaponDropFraction,Weapons dropped by enemies,Double,55,,Survival: 10 percent. Vanilla: 100 percent.,0,200,Loot
+sml_on_weaponSalvageDropFraction,Survival change: Weapons from salvage,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (100 percent).",,,Loot
+sml_weaponSalvageDropFraction,Weapons from salvage,Double,60,,Survival: 20 percent. Vanilla: 100 percent.,0,200,Loot
+sml_on_fighterDropFraction,Survival change: Fighter LPCs dropped by enemies,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (100 percent).",,,Loot
+sml_fighterDropFraction,Fighter LPCs dropped by enemies,Double,60,,Survival: 20 percent. Vanilla: 100 percent.,0,200,Loot
+sml_on_fighterSalvageDropFraction,Survival change: Fighter LPCs from salvage,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (100 percent).",,,Loot
+sml_fighterSalvageDropFraction,Fighter LPCs from salvage,Double,65,,Survival: 30 percent. Vanilla: 100 percent.,0,200,Loot
+sml_on_hullmodDropFraction,Survival change: Hull mod specs dropped by enemies,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (100 percent).",,,Loot
+sml_hullmodDropFraction,Hull mod specs dropped by enemies,Double,62.5,,Survival: 25 percent. Vanilla: 100 percent.,0,200,Loot
+sml_on_hullmodSalvageDropFraction,Survival change: Hull mod specs from salvage,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (100 percent).",,,Loot
+sml_hullmodSalvageDropFraction,Hull mod specs from salvage,Double,75,,Survival: 50 percent. Vanilla: 100 percent.,0,200,Loot
+sml_on_specialItemSalvageDropFraction,Survival change: Special items from salvage,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (100 percent).",,,Loot
+sml_specialItemSalvageDropFraction,Special items from salvage,Double,75,,Survival: 50 percent. Vanilla: 100 percent.,0,200,Loot
+sml_on_commoditySalvageDropFraction,Survival change: Commodities from salvage,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (100 percent).",,,Loot
+sml_commoditySalvageDropFraction,Commodities from salvage,Double,65,,Survival: 30 percent. Vanilla: 100 percent.,0,200,Loot
+sml_on_sleeperPodsSpecialCrewFraction,Survival change: Crew from sleeper pods,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (100 percent).",,,Loot
+sml_sleeperPodsSpecialCrewFraction,Crew from sleeper pods,Double,65,,Survival: 30 percent. Vanilla: 100 percent.,0,200,Loot
+sml_on_salvageCargoFractionPostCombat,Survival change: Cargo salvaged after battle,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (75 percent).",,,Loot
+sml_salvageCargoFractionPostCombat,Cargo salvaged after battle,Double,57.5,,Survival: 40 percent. Vanilla: 75 percent.,0,150,Loot
+sml_on_threatResourceSalvageMult,Survival change: Resources from Threat fleets,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (100 percent).",,,Loot
+sml_threatResourceSalvageMult,Resources from Threat fleets,Double,62.5,,Survival: 25 percent. Vanilla: 100 percent.,0,200,Loot
+sml_on_aiCoreDropFraction,Survival change: AI cores dropped,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (100 percent).",,,Loot
+sml_aiCoreDropFraction,AI cores dropped,Double,55,,Survival: 10 percent. Vanilla: 100 percent.,0,200,Loot
+sml_on_substrateDropFraction,Survival change: Dweller substrate dropped,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (100 percent).",,,Loot
+sml_substrateDropFraction,Dweller substrate dropped,Double,70,,Survival: 40 percent. Vanilla: 100 percent.,0,200,Loot
+sml_on_partsSpecialSalvageDropFraction,Survival change: Domain-grade parts from special salvage,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (100 percent).",,,Loot
+sml_partsSpecialSalvageDropFraction,Domain-grade parts from special salvage,Double,75,,Survival: 50 percent. Vanilla: 100 percent.,0,200,Loot
 sml_on_partsPerUnitOfSupplies,Survival change: Domain-grade parts per 100 supplies salvaged,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (5).",,,Loot
 sml_partsPerUnitOfSupplies,Domain-grade parts per 100 supplies salvaged,Double,3.75,,Survival: 2.5. Vanilla: 5.,0,20,Loot
-sml_on_partsFractionReturnedFromScuttling,Survival change: Domain-grade parts back when you scuttle a ship,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (75%).",,,Loot
-sml_partsFractionReturnedFromScuttling,Domain-grade parts back when you scuttle a ship,Double,62.5,,Survival: 50%. Vanilla: 75%. Share of the parts used on the ship.,0,150,Loot
+sml_on_partsFractionReturnedFromScuttling,Survival change: Domain-grade parts back when you scuttle a ship,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (75 percent).",,,Loot
+sml_partsFractionReturnedFromScuttling,Domain-grade parts back when you scuttle a ship,Double,62.5,,Survival: 50 percent. Vanilla: 75 percent. Share of the parts used on the ship.,0,150,Loot
 sml_header_fuel,Fuel Header,Header,Fuel,,,,,Fuel
-sml_on_fuelCapacityMult,Survival change: Fuel tank size,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (100%).",,,Fuel
-sml_fuelCapacityMult,Fuel tank size,Double,75,,Survival: 50%. Vanilla: 100%.,0,200,Fuel
-sml_on_fuelCapacityMultTanker,Survival change: Tanker fuel tank size,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (100%).",,,Fuel
-sml_fuelCapacityMultTanker,Tanker fuel tank size,Double,67.5,,Survival: 35%. Vanilla: 100%.,0,200,Fuel
+sml_on_fuelCapacityMult,Survival change: Fuel tank size,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (100 percent).",,,Fuel
+sml_fuelCapacityMult,Fuel tank size,Double,75,,Survival: 50 percent. Vanilla: 100 percent.,0,200,Fuel
+sml_on_fuelCapacityMultTanker,Survival change: Tanker fuel tank size,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (100 percent).",,,Fuel
+sml_fuelCapacityMultTanker,Tanker fuel tank size,Double,67.5,,Survival: 35 percent. Vanilla: 100 percent.,0,200,Fuel
 sml_on_fuelUseMult,Survival change: Fuel use,Boolean,true,,"On: the survival change, using the numbers below. Off: vanilla (x1).",,,Fuel
 sml_fuelUseMult_0,"Fuel use, frigates",Double,1,,Survival: x1. Vanilla: x1.,0,10,Fuel
 sml_fuelUseMult_1,"Fuel use, destroyers",Double,1,,Survival: x1. Vanilla: x1.,0,10,Fuel
@@ -171,21 +171,21 @@ sml_surveyCrewMult,Survey crew cost,Double,1.25,,Survival: x1.5. Vanilla: x1.,0,
 sml_on_surveyMachineryMult,Survival change: Survey heavy machinery cost,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (x1).",,,Colonies
 sml_surveyMachineryMult,Survey heavy machinery cost,Double,1.25,,Survival: x1.5. Vanilla: x1.,0,10,Colonies
 sml_header_officers,Officers and administrators Header,Header,Officers and administrators,,,,,Officers
-sml_on_officersAvailableFraction,Survival change: Officers for hire (also crew promotion offers),Boolean,true,,"On: the survival change, using the number below. Off: vanilla (100%).",,,Officers
-sml_officersAvailableFraction,Officers for hire (also crew promotion offers),Double,57.5,,Survival: 15%. Vanilla: 100%.,0,200,Officers
-sml_on_adminAvailableFraction,Survival change: Administrators for hire,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (100%).",,,Officers
-sml_adminAvailableFraction,Administrators for hire,Double,55,,Survival: 10%. Vanilla: 100%.,0,200,Officers
-sml_on_cryopodOfficersFraction,Survival change: Officers in cryopods,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (100%).",,,Officers
-sml_cryopodOfficersFraction,Officers in cryopods,Double,75,,Survival: 50%. Vanilla: 100%.,0,200,Officers
-sml_on_cryopodAdminsFraction,Survival change: Administrators in cryopods,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (100%).",,,Officers
-sml_cryopodAdminsFraction,Administrators in cryopods,Double,55,,Survival: 10%. Vanilla: 100%.,0,200,Officers
+sml_on_officersAvailableFraction,Survival change: Officers for hire (also crew promotion offers),Boolean,true,,"On: the survival change, using the number below. Off: vanilla (100 percent).",,,Officers
+sml_officersAvailableFraction,Officers for hire (also crew promotion offers),Double,57.5,,Survival: 15 percent. Vanilla: 100 percent.,0,200,Officers
+sml_on_adminAvailableFraction,Survival change: Administrators for hire,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (100 percent).",,,Officers
+sml_adminAvailableFraction,Administrators for hire,Double,55,,Survival: 10 percent. Vanilla: 100 percent.,0,200,Officers
+sml_on_cryopodOfficersFraction,Survival change: Officers in cryopods,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (100 percent).",,,Officers
+sml_cryopodOfficersFraction,Officers in cryopods,Double,75,,Survival: 50 percent. Vanilla: 100 percent.,0,200,Officers
+sml_on_cryopodAdminsFraction,Survival change: Administrators in cryopods,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (100 percent).",,,Officers
+sml_cryopodAdminsFraction,Administrators in cryopods,Double,55,,Survival: 10 percent. Vanilla: 100 percent.,0,200,Officers
 sml_header_experience,Story points and experience Header,Header,Story points and experience,,,,,Experience
 sml_on_storyPointsPerLevel,Survival change: Story points per level,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (4).",,,Experience
 sml_storyPointsPerLevel,Story points per level,Int,3,,Survival: 2. Vanilla: 4.,0,16,Experience
-sml_on_bonusXP_cleanDisengage,Survival change: Bonus XP for a clean disengage,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (100%).",,,Experience
-sml_bonusXP_cleanDisengage,Bonus XP for a clean disengage,Double,50,,Survival: 0%. Vanilla: 100%.,0,200,Experience
-sml_on_bonusXP_avoidCargoScan,Survival change: Bonus XP for avoiding a cargo scan,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (100%).",,,Experience
-sml_bonusXP_avoidCargoScan,Bonus XP for avoiding a cargo scan,Double,75,,Survival: 50%. Vanilla: 100%.,0,200,Experience
+sml_on_bonusXP_cleanDisengage,Survival change: Bonus XP for a clean disengage,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (100 percent).",,,Experience
+sml_bonusXP_cleanDisengage,Bonus XP for a clean disengage,Double,50,,Survival: 0 percent. Vanilla: 100 percent.,0,200,Experience
+sml_on_bonusXP_avoidCargoScan,Survival change: Bonus XP for avoiding a cargo scan,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (100 percent).",,,Experience
+sml_bonusXP_avoidCargoScan,Bonus XP for avoiding a cargo scan,Double,75,,Survival: 50 percent. Vanilla: 100 percent.,0,200,Experience
 sml_on_bonusXP_recoverNoBonusXPDeploymentPoints,Survival change: Recovering a ship gives no bonus XP from (DP),Boolean,true,,"On: the survival change, using the number below. Off: vanilla (30).",,,Experience
 sml_bonusXP_recoverNoBonusXPDeploymentPoints,Recovering a ship gives no bonus XP from (DP),Int,17,,Survival: 5. Vanilla: 30.,0,120,Experience
 sml_header_hazards,Hazards and missions Header,Header,Hazards and missions,,,,,Hazards
@@ -201,19 +201,19 @@ sml_on_cargoScanShipDamageMult,Survival change: Cargo scan: CR lost,Boolean,true
 sml_cargoScanShipDamageMult,Cargo scan: CR lost,Double,1.5,,Survival: x2. Vanilla: x1.,0,10,Hazards
 sml_on_analyzeMissionSensorStrengthAboveBaseRequired,Survival change: Sensor strength above base needed for Analyze missions,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (none).",,,Hazards
 sml_analyzeMissionSensorStrengthAboveBaseRequired,Sensor strength above base needed for Analyze missions,Int,100,,Survival: 200. Vanilla: none.,0,800,Hazards
-sml_on_ZGRTurnInValueMult,Survival change: Value of specimens turned in to Inesis,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (100%).",,,Hazards
-sml_ZGRTurnInValueMult,Value of specimens turned in to Inesis,Double,65,,Survival: 30%. Vanilla: 100%.,0,200,Hazards
-sml_on_deliveryMissionHighQuantityChanceMult,Survival change: Delivery missions with large amounts,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (100%).",,,Hazards
-sml_deliveryMissionHighQuantityChanceMult,Delivery missions with large amounts,Double,55,,Survival: 10%. Vanilla: 100%.,0,200,Hazards
+sml_on_ZGRTurnInValueMult,Survival change: Value of specimens turned in to Inesis,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (100 percent).",,,Hazards
+sml_ZGRTurnInValueMult,Value of specimens turned in to Inesis,Double,65,,Survival: 30 percent. Vanilla: 100 percent.,0,200,Hazards
+sml_on_deliveryMissionHighQuantityChanceMult,Survival change: Delivery missions with large amounts,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (100 percent).",,,Hazards
+sml_deliveryMissionHighQuantityChanceMult,Delivery missions with large amounts,Double,55,,Survival: 10 percent. Vanilla: 100 percent.,0,200,Hazards
 sml_header_retirement,Retirement and the spacer start Header,Header,Retirement and the spacer start,,,,,Retirement
 sml_on_retirement,Survival change: Retirement,Boolean,true,,"On: the survival change, using the numbers below. Off: vanilla (never).",,,Retirement
-sml_retirementMinCycles,"Retirement, earliest cycle",Int,40,,Survival: 25. Vanilla: never. 0 turns retirement off. Keep it at or below the latest cycle.,0,200,Retirement
-sml_retirementMaxCycles,"Retirement, latest cycle",Int,50,,Survival: 30. Vanilla: never.,0,200,Retirement
-sml_retirementDelayCostBase,"Cost to delay retirement, base",Int,10000,,"Survival: 20,000. Vanilla: none.",0,80000,Retirement
+sml_retirementMinCycles,"Retirement, earliest cycle",Int,40,,"Survival: 25. Vanilla: never. The retirement date is picked when a new sector is made, so other values only matter in a new game. 0 turns retirement off at once. Keep it at or below the latest cycle.",0,200,Retirement
+sml_retirementMaxCycles,"Retirement, latest cycle",Int,50,,"Survival: 30. Vanilla: never. The retirement date is picked when a new sector is made, so this only matters in a new game.",0,200,Retirement
+sml_retirementDelayCostBase,"Cost to delay retirement, base",Int,10000,,"Survival: 20,000. Vanilla: none. Set when a new sector is made, so this only matters in a new game.",0,80000,Retirement
 sml_retirementDelayCostPerMonth,"Cost to delay retirement, per month",Int,500,,"Survival: 1,000. Vanilla: none.",0,4000,Retirement
 sml_retirementDelayCostMax,"Cost to delay retirement, at most",Int,25000,,"Survival: 50,000. Vanilla: none.",0,200000,Retirement
 sml_on_spacerSharePerMonth,Survival change: Spacer start: monthly share of credits above 12 months of pay,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (none).",,,Retirement
-sml_spacerSharePerMonth,Spacer start: monthly share of credits above 12 months of pay,Double,5,,Survival: 10%. Vanilla: none.,0,100,Retirement
+sml_spacerSharePerMonth,Spacer start: monthly share of credits above 12 months of pay,Double,5,,Survival: 10 percent. Vanilla: none.,0,100,Retirement
 sml_on_extraSpacerDebtPerLevel,Survival change: Spacer start: extra debt per level,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (0).",,,Retirement
 sml_extraSpacerDebtPerLevel,Spacer start: extra debt per level,Int,1000,,"Survival: 2,000. Vanilla: 0.",0,8000,Retirement
 sml_header_survival_help,Things survival mode makes easier Header,Header,Things survival mode makes easier,,,,,Survival help
@@ -225,14 +225,14 @@ sml_on_barCustomProductionMaxValueMult,Survival change: Custom production order 
 sml_barCustomProductionMaxValueMult,Custom production order size (bar contacts),Double,3,,Survival: x3. Vanilla: x1.,0,10,Survival help
 sml_on_playerIndustryCustomProductionMaxValueMult,Survival change: Custom production order size (your industry),Boolean,true,,"On: the survival change, using the number below. Off: vanilla (x1).",,,Survival help
 sml_playerIndustryCustomProductionMaxValueMult,Custom production order size (your industry),Double,3,,Survival: x3. Vanilla: x1.,0,10,Survival help
-sml_on_shipStoragePriceMult,Survival change: Ship storage fee,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (100%).",,,Survival help
-sml_shipStoragePriceMult,Ship storage fee,Double,50,,Survival: 50%. Vanilla: 100%.,0,200,Survival help
+sml_on_shipStoragePriceMult,Survival change: Ship storage fee,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (100 percent).",,,Survival help
+sml_shipStoragePriceMult,Ship storage fee,Double,50,,Survival: 50 percent. Vanilla: 100 percent.,0,200,Survival help
 sml_on_shipSellValueIncreasePerPartUsed,Survival change: Ship sell value per Domain-grade part used on d-mods,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (0).",,,Survival help
 sml_shipSellValueIncreasePerPartUsed,Ship sell value per Domain-grade part used on d-mods,Int,5000,,"Survival: 5,000. Vanilla: 0.",0,20000,Survival help
-sml_on_shipSellValueMultPerSMod,Survival change: Ship sell value per S-mod,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (0%).",,,Survival help
-sml_shipSellValueMultPerSMod,Ship sell value per S-mod,Double,100,,"Survival: 100%. Vanilla: 0%. Keep it the same as the buy price per S-mod, or buying and selling S-modded ships makes credits.",0,200,Survival help
-sml_on_shipBuyValueMultPerSMod,Survival change: Ship buy price per S-mod,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (0%).",,,Survival help
-sml_shipBuyValueMultPerSMod,Ship buy price per S-mod,Double,100,,"Survival: 100%. Vanilla: 0%. Keep it the same as the sell value per S-mod, or buying and selling S-modded ships makes credits.",0,200,Survival help
+sml_on_shipSellValueMultPerSMod,Survival change: Ship sell value per S-mod,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (0 percent).",,,Survival help
+sml_shipSellValueMultPerSMod,Ship sell value per S-mod,Double,100,,"Survival: 100 percent. Vanilla: 0 percent. Keep it the same as the buy price per S-mod, or buying and selling S-modded ships makes credits.",0,200,Survival help
+sml_on_shipBuyValueMultPerSMod,Survival change: Ship buy price per S-mod,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (0 percent).",,,Survival help
+sml_shipBuyValueMultPerSMod,Ship buy price per S-mod,Double,100,,"Survival: 100 percent. Vanilla: 0 percent. Keep it the same as the sell value per S-mod, or buying and selling S-modded ships makes credits.",0,200,Survival help
 sml_on_threatNonResourceDropMult,Survival change: Weapons and fighter LPCs dropped by Threat fleets,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (x1).",,,Survival help
 sml_threatNonResourceDropMult,Weapons and fighter LPCs dropped by Threat fleets,Double,2,,Survival: x2. Vanilla: x1. Applied on top of the weapon and fighter LPC drop settings.,0,10,Survival help
 sml_on_crewForSaleMilitaryMult,Survival change: Crew at military markets,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (x1).",,,Survival help
@@ -244,15 +244,15 @@ sml_suppliesForSaleMilitaryMult,Supplies at military markets,Double,1.2,,Surviva
 sml_on_fuelForSaleMilitaryMult,Survival change: Fuel at military markets,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (x1).",,,Survival help
 sml_fuelForSaleMilitaryMult,Fuel at military markets,Double,1.2,,Survival: x1.2. Vanilla: x1.,0,10,Survival help
 sml_on_personnelForSaleMinMultBadRep,Survival change: Personnel for sale at bad reputation,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (no effect).",,,Survival help
-sml_personnelForSaleMinMultBadRep,Personnel for sale at bad reputation,Double,25,,Survival: 25%. Vanilla: no effect.,0,100,Survival help
+sml_personnelForSaleMinMultBadRep,Personnel for sale at bad reputation,Double,25,,Survival: 25 percent. Vanilla: no effect.,0,100,Survival help
 sml_on_personnelForSaleMaxMultGoodRep,Survival change: Personnel for sale at good reputation,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (no effect).",,,Survival help
-sml_personnelForSaleMaxMultGoodRep,Personnel for sale at good reputation,Double,200,,Survival: 200%. Vanilla: no effect.,0,400,Survival help
+sml_personnelForSaleMaxMultGoodRep,Personnel for sale at good reputation,Double,200,,Survival: 200 percent. Vanilla: no effect.,0,400,Survival help
 sml_on_weaponAndFighterSellPriceMult,Survival change: Weapons and fighters sold back,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (vanilla ratio).",,,Survival help
 sml_weaponAndFighterSellPriceMult,Weapons and fighters sold back,Double,1.5,,Survival: x1.5. Vanilla: vanilla ratio. Applied after the raised price.,0,10,Survival help
 sml_on_hullmodSellPriceMult,Survival change: Hull mod specs sold back,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (vanilla ratio).",,,Survival help
-sml_hullmodSellPriceMult,Hull mod specs sold back,Double,25,,Survival: 25%. Vanilla: vanilla ratio. Applied after the raised price.,0,100,Survival help
+sml_hullmodSellPriceMult,Hull mod specs sold back,Double,25,,Survival: 25 percent. Vanilla: vanilla ratio. Applied after the raised price.,0,100,Survival help
 sml_on_shipBuyPriceMultPerDMod,Survival change: Ship price kept per d-mod,Boolean,true,,"On: the survival change, using the number below. Off: vanilla (none).",,,Survival help
-sml_shipBuyPriceMultPerDMod,Ship price kept per d-mod,Double,85,,Survival: 85%. Vanilla: none.,0,170,Survival help
+sml_shipBuyPriceMultPerDMod,Ship price kept per d-mod,Double,85,,Survival: 85 percent. Vanilla: none.,0,170,Survival help
 sml_header_rules,Survival rules Header,Header,Survival rules,,,,,Rules
 sml_militaryMarketRequiresCommission,Military market needs a commission,Boolean,true,,Survival: yes. Vanilla: no.,,,Rules
 sml_removeGalatiaStipend,Galatia Academy stipend removed,Boolean,true,,Survival: yes. Vanilla: no. Only takes effect in a new game.,,,Rules

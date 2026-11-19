@@ -67,6 +67,12 @@ def show(unit, v):
     return num(v)
 
 
+def luna(text):
+    """LunaLib draws names and descriptions through String.format (TooltipMakerAPI.addPara with highlights),
+    so a bare % crashes the game when the tab opens. Write the word instead."""
+    return re.sub(r"\s*%", " percent", text)
+
+
 def field_id(key, index):
     return "sml_" + key[len("ext_"):] + ("" if index is None else "_%d" % index)
 
@@ -165,19 +171,22 @@ def gen_luna():
                              % ("s" if len(rows) > 1 else "", show(unit, van)))
                     if any(r[8] == NEW_GAME for r in rows):
                         sdesc += " " + NEW_GAME
-                    w.writerow([switch, "Survival change: " + glabel, "Boolean", "true", "", sdesc, "", "", tab])
+                    w.writerow([switch, luna("Survival change: " + glabel), "Boolean", "true", "", luna(sdesc), "", "",
+                                tab])
             fid = field_id(key, index)
             desc = "Survival: %s. Vanilla: %s." % (show(unit, surv), show(unit, van))
             if note:
                 desc += " " + note
             if unit == "bool":
-                w.writerow([fid, label, "Boolean", "true" if lite else "false", "", desc, "", "", tab])
+                w.writerow([fid, luna(label), "Boolean", "true" if lite else "false", "", luna(desc), "", "", tab])
             else:
                 lo, hi = limits(unit, key, surv, van)
                 default = lite * 100 if unit in ("pct", "per100") else lite
                 ftype = "Int" if unit == "int" else "Double"
-                w.writerow([fid, label, ftype, num(default) if ftype == "Double" else int(default), "", desc,
-                            num(lo), num(hi), tab])
+                if ftype == "Double" and abs(round(default, 2) - default) > 1e-9:
+                    raise SystemExit("%s default %s has more than 2 decimals; LunaLib's slider rounds it" % (fid, default))
+                w.writerow([fid, luna(label), ftype, num(default) if ftype == "Double" else int(default), "",
+                            luna(desc), num(lo), num(hi), tab])
             entry = {"id": fid, "key": key, "unit": unit}
             if index is not None:
                 entry["index"] = index
@@ -186,6 +195,8 @@ def gen_luna():
                 off = off_value(key, van)
                 entry["offKey" if isinstance(off, str) else "off"] = off
             fields.append(entry)
+    if "%" in out.getvalue():
+        raise SystemExit("LunaSettings.csv has a % sign; LunaLib's String.format would crash the game")
     write(os.path.join("data", "config", "LunaSettings.csv"), out.getvalue())
     write(os.path.join("data", "config", "survival_mode_lite_fields.json"),
           json.dumps({"fields": fields}, indent=1) + "\n")

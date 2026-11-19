@@ -37,6 +37,10 @@ stable, LunaLib stores the player's values under them.
   changed in place in `getSettingsJSON()`). The game reads these keys live through StarfarerSettings' float
   cache, which setFloat updates. The only copy taken at startup is `Tuning.EXT_DELAY_FACTOR`, set directly.
 - Units: pct and per100 are edited in LunaLib times 100, because LunaLib's slider rounds to 2 decimals.
+  Other Double defaults may have at most 2 decimals (build.py rejects more).
+- No `%` anywhere in `LunaSettings.csv`: LunaLib 2.1.0 draws names and descriptions with
+  `addPara(text, pad, color, highlight, new String[0])`, which runs `String.format` in 0.98.5a, so a bare `%`
+  crashes the game when the tab opens. build.py writes "percent" and rejects `%`.
 - On/off switches (LunaLib only): every key that is not a yes/no rule has a Boolean field `sml_on_<key without ext_>`
   above its rows; `GROUPS` in `values.py` makes keys share one (ship sizes, corruption, retirement). Off writes the
   vanilla value: the vanilla column, or `OFF` in `values.py` where that column is text ("none", "never") or where a

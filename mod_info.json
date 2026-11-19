@@ -3,7 +3,7 @@
   "name": "Survival Mode - Lite",
   "author": "Oddisz",
   "utility": "true",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "modThreadId": "36456",
   "description": "In between vanilla and survival mode - fully customizable! Every survival number (prices, loot, fuel, salaries, colony costs and more) starts halfway between vanilla and survival. With LunaLib each one can be changed. Only campaigns started in Survival mode change.",
   "gameVersion": "0.98.5a-RC4",
