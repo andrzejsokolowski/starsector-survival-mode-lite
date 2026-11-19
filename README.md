@@ -9,7 +9,7 @@ Only campaigns started in Survival mode change. Normal campaigns are not touched
 
 ## Everything Survival mode changes
 
-Vanilla is the base game without Survival mode. Lite is the default of this mod. With LunaLib every value in these tables can be changed in the mod settings (one tab per table).
+Vanilla is the base game without Survival mode. Lite is the default of this mod. With LunaLib every value in these tables can be changed in the mod settings (one tab per table), and every change has an on/off switch above its numbers: off uses the vanilla value.
 
 <!-- TABLES START -->
 

@@ -22,6 +22,7 @@ Keeps everything the 0.98.5a Survival mode does, with every penalty halfway to v
 [list]
 [li][b]{{FIELD_COUNT}} settings[/b], one for every survival number, in 12 tabs: Prices, Pay, Markets, Loot, Fuel, Colonies, Officers, Experience, Hazards, Retirement, Survival help and Rules.[/li]
 [li]Each setting shows its survival and its vanilla value, so you can pick anything in between, or past either end.[/li]
+[li][b]{{SWITCH_COUNT}} on/off switches[/b], one for every survival change. Off uses the vanilla value: no officer pay per battle, no corruption, no retirement, vanilla prices, and so on.[/li]
 [li]Want survival prices but vanilla loot? Vanilla fuel but survival colonies? Set it.[/li]
 [li]The survival rules that are settings can be switched off too, like the military market needing a commission.[/li]
 [li]Changes apply at once, in a game in progress. A few apply only when a new sector is made, and their description says so.[/li]
@@ -69,6 +70,9 @@ My code in this mod is under the CC0 (Creative Commons Zero) License, allowing y
 [/spoiler]
 
 [spoiler=Version log]
+[b]1.2.0[/b]
+[list][li]New: an on/off switch in LunaLib for every survival change, above its numbers. Off uses the vanilla value, for example no officer pay per battle, no corruption or no retirement.[/li]
+[li]A changed sensor strength requirement for Analyze missions now applies at once, without a restart.[/li][/list]
 [b]1.1.1[/b]
 [list][li]Follows the survival changes in Starsector 0.98.5a-RC8. Lite stays halfway between vanilla and the new survival values.[/li]
 [li]Officer pay per battle: 0.25 / 0.5 / 1 / 4 months of salary (was 0.5 / 1 / 2 / 8).[/li]

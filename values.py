@@ -194,6 +194,48 @@ ROWS = [
     ("Rules", "Analyze missions need sensor strength", "ext_analyzeMissionRequiresSensorStrength", None, "bool", True, True, False, ""),
 ]
 
+# On/off switches (LunaLib only). Every key that is not a yes/no rule gets one switch, placed above its rows.
+# Off writes the vanilla value instead of the slider value. Keys listed here share one switch; any other key
+# gets its own, named after its row label.
+GROUPS = {
+    "ext_shipBuyPriceMult": ("shipBuyPriceMult", "Ship prices"),
+    "ext_officerCombatPay": ("officerCombatPay", "Officer pay per battle"),
+    "ext_recoveryNonOwnSPCost": ("recoveryNonOwnSPCost", "Story points to recover a ship"),
+    "ext_recoveryNonOwnSPCostCiv": ("recoveryNonOwnSPCostCiv", "Story points to recover a civilian ship"),
+    "ext_fuelUseMult": ("fuelUseMult", "Fuel use"),
+    "ext_corruptionThreshold": ("corruption", "Corruption"),
+    "ext_corruptionExponent": ("corruption", "Corruption"),
+    "ext_retirementMinCycles": ("retirement", "Retirement"),
+    "ext_retirementMaxCycles": ("retirement", "Retirement"),
+    "ext_retirementDelayCostBase": ("retirement", "Retirement"),
+    "ext_retirementDelayCostPerMonth": ("retirement", "Retirement"),
+    "ext_retirementDelayCostMax": ("retirement", "Retirement"),
+}
+
+# The game value a switched-off key gets, where the vanilla column is not that number already.
+# A string is the name of the base game setting to copy, so a mod that changes it is respected.
+OFF = {
+    "ext_officerCombatPay": 0,                       # pay = salary x 0, so none
+    "ext_corruptionThreshold": 1e30,                 # income never gets there
+    "ext_corruptionExponent": 1,                     # unused once the threshold is never reached
+    "ext_retirementMinCycles": 0,                    # the game turns retirement off at 0
+    "ext_retirementMaxCycles": 0,
+    "ext_retirementDelayCostBase": 0,
+    "ext_retirementDelayCostPerMonth": 0,
+    "ext_retirementDelayCostMax": 0,
+    "ext_spacerSharePerMonth": 0,                    # the game turns the share off at 0
+    "ext_analyzeMissionSensorStrengthAboveBaseRequired": 0,
+    "ext_personnelForSaleMinMultBadRep": 1,          # 1 = reputation does not change the amount
+    "ext_personnelForSaleMaxMultGoodRep": 1,
+    "ext_weaponAndFighterSellPriceMult": 1,          # the game uses 1 outside survival
+    "ext_hullmodSellPriceMult": 1,
+    "ext_shipBuyPriceMultPerDMod": 1,
+    "ext_storyPointsPerLevel": "storyPointsPerLevel",
+    "ext_salvageCargoFractionPostCombat": "salvageCargoFraction",
+    "ext_partsPerUnitOfSupplies": "partsPerUnitOfSupplies",
+    "ext_partsFractionReturnedFromScuttling": "partsFractionReturnedFromScuttling",
+}
+
 # LunaLib tab order and a short header for each.
 TABS = [
     ("Prices", "Prices"),

@@ -37,4 +37,10 @@ stable, LunaLib stores the player's values under them.
   changed in place in `getSettingsJSON()`). The game reads these keys live through StarfarerSettings' float
   cache, which setFloat updates. The only copy taken at startup is `Tuning.EXT_DELAY_FACTOR`, set directly.
 - Units: pct and per100 are edited in LunaLib times 100, because LunaLib's slider rounds to 2 decimals.
+- On/off switches (LunaLib only): every key that is not a yes/no rule has a Boolean field `sml_on_<key without ext_>`
+  above its rows; `GROUPS` in `values.py` makes keys share one (ship sizes, corruption, retirement). Off writes the
+  vanilla value: the vanilla column, or `OFF` in `values.py` where that column is text ("none", "never") or where a
+  base game setting should be copied (`offKey`). The field map carries `switch` and `off`/`offKey` per value.
+- The game also copies the Analyze mission sensor requirement once (`AnalyzeEntityMissionIntel.MIN_SENSOR_STRENGTH`);
+  the plugin sets that field directly too.
 - `LunaBridge` is the only class naming LunaLib, loaded only when LunaLib is enabled.

@@ -1,3 +1,7 @@
+Version 1.2.0 (2026-11-19)
+- New: an on/off switch in LunaLib for every survival change, above its numbers. Off uses the vanilla value, for example no officer pay per battle, no corruption or no retirement.
+- A changed sensor strength requirement for Analyze missions now applies at once, without a restart.
+
 Version 1.1.1 (2026-11-19)
 - Follows the survival changes in Starsector 0.98.5a-RC8. Lite stays halfway between vanilla and the new survival values.
 - Officer pay per battle: 0.25 / 0.5 / 1 / 4 months of salary (was 0.5 / 1 / 2 / 8).

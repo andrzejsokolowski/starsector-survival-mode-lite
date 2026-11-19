@@ -4,6 +4,7 @@ import com.fs.starfarer.api.BaseModPlugin;
 import com.fs.starfarer.api.Global;
 import com.fs.starfarer.api.SettingsAPI;
 import com.fs.starfarer.api.impl.campaign.Tuning;
+import com.fs.starfarer.api.impl.campaign.intel.AnalyzeEntityMissionIntel;
 import org.apache.log4j.Logger;
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -12,8 +13,10 @@ import org.json.JSONObject;
  * Without LunaLib the Lite values come from data/config/settings.json and this plugin does nothing.
  * With LunaLib it writes the player's values into the game's settings at application load and whenever
  * they change. The game reads these survival settings when it uses them (prices, drops, pay and so on),
- * so a change applies at once. The one exception is the threat slowdown, which the game copies into
- * Tuning.EXT_DELAY_FACTOR once; that field is set here too.
+ * so a change applies at once. Two values the game copies once are set here directly: the threat
+ * slowdown (Tuning.EXT_DELAY_FACTOR) and the Analyze mission sensor strength
+ * (AnalyzeEntityMissionIntel.MIN_SENSOR_STRENGTH). Each survival change has an on/off switch; off means
+ * the vanilla value.
  */
 public class SurvivalModeLitePlugin extends BaseModPlugin {
 
@@ -46,11 +49,15 @@ public class SurvivalModeLitePlugin extends BaseModPlugin {
         }
     }
 
-    /** Copies every LunaLib value into the game's settings. */
+    /**
+     * Copies every LunaLib value into the game's settings. A value whose on/off switch is off gets the
+     * vanilla value instead: a number from the field map ("off"), or a base game setting ("offKey").
+     */
     static void apply() throws Exception {
         SettingsAPI settings = Global.getSettings();
         JSONArray fields = settings.loadJSON(FIELDS, MOD_ID).getJSONArray("fields");
         int applied = 0;
+        int switchedOff = 0;
         for (int i = 0; i < fields.length(); i++) {
             JSONObject field = fields.getJSONObject(i);
             String id = field.getString("id");
@@ -66,9 +73,16 @@ public class SurvivalModeLitePlugin extends BaseModPlugin {
                 continue;
             }
 
-            Double raw = "int".equals(unit) ? toDouble(LunaBridge.integer(id)) : LunaBridge.number(id);
-            if (raw == null) continue;
-            double value = "pct".equals(unit) || "per100".equals(unit) ? raw / 100.0 : raw;
+            double value;
+            Boolean on = field.has("switch") ? LunaBridge.bool(field.getString("switch")) : null;
+            if (Boolean.FALSE.equals(on)) {
+                value = field.has("offKey") ? settings.getFloat(field.getString("offKey")) : field.getDouble("off");
+                switchedOff++;
+            } else {
+                Double raw = "int".equals(unit) ? toDouble(LunaBridge.integer(id)) : LunaBridge.number(id);
+                if (raw == null) continue;
+                value = "pct".equals(unit) || "per100".equals(unit) ? raw / 100.0 : raw;
+            }
 
             if (index >= 0) {
                 // Lists are read live from the settings JSON, so changing the entry in place is enough.
@@ -80,9 +94,17 @@ public class SurvivalModeLitePlugin extends BaseModPlugin {
             if ("ext_timeBasedThingsDelayFactor".equals(key)) {
                 Tuning.EXT_DELAY_FACTOR = (float) value;
             }
+            if ("ext_analyzeMissionSensorStrengthAboveBaseRequired".equals(key)) {
+                // The game works this out once, when the class loads.
+                AnalyzeEntityMissionIntel.MIN_SENSOR_STRENGTH = (int) (value + settings.getFloat("sensorRangeBase"));
+            }
             applied++;
         }
-        log.info("Survival Mode - Lite: applied " + applied + " LunaLib values");
+        // The API asks for this after changing getSettingsJSON() (the lists above). setFloat/setBoolean
+        // also write into that JSON, so clearing the caches keeps every value.
+        settings.resetCached();
+        log.info("Survival Mode - Lite: applied " + applied + " LunaLib values, " + switchedOff
+                + " of them switched off (vanilla)");
     }
 
     private static Double toDouble(Integer value) {

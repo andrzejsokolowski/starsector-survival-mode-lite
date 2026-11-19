@@ -6,7 +6,8 @@ Needs javac/jar (JDK 17+) on PATH and the game plus LunaLib under D:/Games/StarS
 Writes, from values.py:
 - data/config/settings.json             Lite defaults (used with or without LunaLib)
 - data/config/LunaSettings.csv          one LunaLib field per value
-- data/config/survival_mode_lite_fields.json   field id -> setting key, list index, unit (read by the plugin)
+- data/config/survival_mode_lite_fields.json   field id -> setting key, list index, unit, on/off switch and
+  vanilla value (read by the plugin)
 - the tables in README.md between the TABLES markers
 - forum-post.txt from forum-post.template.txt (the full value tables and the setting count)
 Then jars/SurvivalModeLite.jar, the staging folder SurvivalModeLite/ and SurvivalModeLite.zip.
@@ -26,7 +27,7 @@ import shutil
 import subprocess
 import zipfile
 
-from values import ROWS, TABS, FIXED_RULES
+from values import ROWS, TABS, FIXED_RULES, GROUPS, OFF, NEW_GAME
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 GAME = "D:/Games/StarSector0985"
@@ -68,6 +69,21 @@ def show(unit, v):
 
 def field_id(key, index):
     return "sml_" + key[len("ext_"):] + ("" if index is None else "_%d" % index)
+
+
+def group(key, label):
+    """(switch field id, switch label) for a key that is not a yes/no rule."""
+    gid, glabel = GROUPS.get(key, (key[len("ext_"):], label))
+    return "sml_on_" + gid, glabel
+
+
+def off_value(key, van):
+    """What the game gets when the key's switch is off: a number, or the name of a base game setting."""
+    if key in OFF:
+        return OFF[key]
+    if isinstance(van, (int, float)) and not isinstance(van, bool):
+        return van
+    raise SystemExit("No vanilla value for " + key + ": add it to OFF in values.py")
 
 
 # ---------------------------------------------------------------- generation
@@ -124,17 +140,32 @@ def gen_luna():
     w.writerow(["fieldID", "fieldName", "fieldType", "defaultValue", "secondaryValue", "fieldDescription",
                 "minValue", "maxValue", "tab"])
     fields = []
+    switches = set()
     for t, (tab, header) in enumerate(TABS):
         tid = re.sub(r"[^a-z]+", "_", tab.lower()).strip("_")
         if t == 0:
             w.writerow(["sml_intro", "Intro", "Text",
                         "Every value starts at Lite, halfway between vanilla and survival. Each description gives the "
-                        "survival and the vanilla value. Only campaigns started in Survival mode use these. "
+                        "survival and the vanilla value. Every change has an on/off switch above its numbers: off "
+                        "uses the vanilla value. Only campaigns started in Survival mode use these. "
                         "Changes apply at once, unless the description says otherwise.", "", "", "", "", tab])
         w.writerow(["sml_header_" + tid, header + " Header", "Header", header, "", "", "", "", tab])
         for row_tab, label, key, index, unit, surv, lite, van, note in ROWS:
             if row_tab != tab:
                 continue
+            switch = None
+            if unit != "bool":
+                switch, glabel = group(key, label)
+                if switch not in switches:
+                    if any(group(r[2], r[1])[0] == switch and r[0] != tab for r in ROWS):
+                        raise SystemExit("Switch %s spans two tabs" % switch)
+                    switches.add(switch)
+                    rows = [r for r in ROWS if r[4] != "bool" and group(r[2], r[1])[0] == switch]
+                    sdesc = ("On: the survival change, using the number%s below. Off: vanilla (%s)."
+                             % ("s" if len(rows) > 1 else "", show(unit, van)))
+                    if any(r[8] == NEW_GAME for r in rows):
+                        sdesc += " " + NEW_GAME
+                    w.writerow([switch, "Survival change: " + glabel, "Boolean", "true", "", sdesc, "", "", tab])
             fid = field_id(key, index)
             desc = "Survival: %s. Vanilla: %s." % (show(unit, surv), show(unit, van))
             if note:
@@ -150,11 +181,15 @@ def gen_luna():
             entry = {"id": fid, "key": key, "unit": unit}
             if index is not None:
                 entry["index"] = index
+            if switch is not None:
+                entry["switch"] = switch
+                off = off_value(key, van)
+                entry["offKey" if isinstance(off, str) else "off"] = off
             fields.append(entry)
     write(os.path.join("data", "config", "LunaSettings.csv"), out.getvalue())
     write(os.path.join("data", "config", "survival_mode_lite_fields.json"),
           json.dumps({"fields": fields}, indent=1) + "\n")
-    return len(fields)
+    return len(fields), len(switches)
 
 
 def gen_readme():
@@ -183,7 +218,7 @@ def gen_readme():
     write("README.md", text)
 
 
-def gen_forum_post(field_count):
+def gen_forum_post(field_count, switch_count):
     parts = []
     for tab, header in TABS:
         parts.append("[b]%s[/b]" % header)
@@ -199,6 +234,7 @@ def gen_forum_post(field_count):
         text = fh.read()
     text = text.replace("{{VALUE_TABLES}}", "\n".join(parts).rstrip())
     text = text.replace("{{FIELD_COUNT}}", str(field_count))
+    text = text.replace("{{SWITCH_COUNT}}", str(switch_count))
     if any(ord(c) > 127 for c in text):
         raise SystemExit("forum-post.txt must be plain ASCII (the forum rejects other characters)")
     write("forum-post.txt", text)
@@ -256,6 +292,16 @@ def check():
     for key, value in ours.items():
         if isinstance(value, list) and (value[0] != "core_clearArray" or len(value) - 1 != base[key]):
             raise SystemExit("Bad list: " + key)
+    with open(GAME_SETTINGS, encoding="utf-8") as fh:
+        game_text = strip_comments(fh.read())
+    for key, off in OFF.items():
+        if key not in base:
+            raise SystemExit("OFF names an unknown setting: " + key)
+        if isinstance(off, str) and not re.search(r'^\s*"%s"\s*:\s*[-0-9.]' % re.escape(off), game_text, re.M):
+            raise SystemExit("OFF copies %s, which is not a plain number in the game's settings" % off)
+    for key in GROUPS:
+        if key not in base:
+            raise SystemExit("GROUPS names an unknown setting: " + key)
     print(len(ROWS), "values checked against", GAME_SETTINGS)
 
     with open(os.path.join(ROOT, "mod_info.json"), encoding="utf-8") as fh:
@@ -345,10 +391,10 @@ def stage_and_zip(version):
 
 if __name__ == "__main__":
     gen_settings_json()
-    count = gen_luna()
-    print(count, "LunaLib fields")
+    count, switch_count = gen_luna()
+    print(count, "LunaLib value fields,", switch_count, "on/off switches")
     gen_readme()
-    gen_forum_post(count)
+    gen_forum_post(count, switch_count)
     version = check()
     compile_jar()
     stage_and_zip(version)
